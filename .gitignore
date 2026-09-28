@@ -1,0 +1,19 @@
+# macOS system files
+.DS_Store
+
+# Python environment
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# Datasets (We don't want to push massive videos to GitHub)
+data/raw_videos/*
+data/processed_frames/*
+data/embeddings/*
+
+# Keep data folder structures
+!data/raw_videos/.gitkeep
+!data/processed_frames/.gitkeep
+!data/embeddings/.gitkeep
