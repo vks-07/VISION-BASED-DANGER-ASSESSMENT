@@ -1,90 +1,103 @@
 import cv2
 import os
 import numpy as np
+from typing import Tuple
 
-def extract_frames(video_path, output_dir, start_time, end_time, num_frames=50):
+def get_video_info(video_path: str) -> Tuple[cv2.VideoCapture, float, int]:
     """
-    Extracts a fixed number of equally spaced frames from a specific segment of a video.
+    Opens a video file and retrieves its properties.
     
-    Args:
+    Parameters:
         video_path (str): Path to the input video file.
-        output_dir (str): Directory where extracted frames will be saved.
-        start_time (float): Ground truth start time of the event in seconds.
-        end_time (float): Ground truth end time of the event in seconds.
-        num_frames (int): Number of frames to extract (default is 50).
+    Returns:
+        tuple: (VideoCapture object, FPS, total_frames)
     """
-    # Create the output directory if it doesn't exist
-    os.makedirs(output_dir, exist_ok=True)
-
     cap = cv2.VideoCapture(video_path)
     if not cap.isOpened():
-        print(f"Error: Could not open video {video_path}")
-        return
-
-    # Get the frames per second (fps) and total frames of the video
+        raise ValueError(f"Could not open video: {video_path}")
+        
     fps = cap.get(cv2.CAP_PROP_FPS)
-    total_frames_in_video = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
-    
-    if fps == 0:
-        print("Error: FPS is 0. Video might be corrupted or format unsupported.")
-        return
+    total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+    return cap, fps, total_frames
 
-    # Convert timestamps to frame indices
-    start_frame = int(start_time * fps)
-    end_frame = int(end_time * fps)
+def calculate_frame_indices(start_time: float, end_time: float, fps: float, total_frames: int, num_frames: int) -> np.ndarray:
+    """
+    Calculates the exact frame indices to extract from the temporal segment.
     
-    # Ensure indices are within the video's actual boundaries
-    start_frame = max(0, start_frame)
-    end_frame = min(total_frames_in_video - 1, end_frame)
+    Parameters:
+        start_time (float): Ground truth start time in seconds.
+        end_time (float): Ground truth end time in seconds.
+        fps (float): Frames per second of the video.
+        total_frames (int): Total number of frames in the video.
+        num_frames (int): Number of frames to extract.
+    Returns:
+        np.ndarray: Array of integer frame indices.
+    """
+    start_frame = max(0, int(start_time * fps))
+    end_frame = min(total_frames - 1, int(end_time * fps))
     
     if start_frame >= end_frame:
-        print(f"Error: Invalid temporal segment for video {video_path}")
-        cap.release()
-        return
+        raise ValueError("Start time must be before end time.")
         
-    # Generate exactly 'num_frames' equally separated indices between start and end
-    frame_indices = np.linspace(start_frame, end_frame, num_frames, dtype=int)
+    # We use linspace to get exactly 'num_frames' evenly spaced across the segment
+    # e.g., if start frame is 10 and end is 110, and we want 50 frames, it steps by 2
+    return np.linspace(start_frame, end_frame, num_frames, dtype=int)
+
+def extract_and_save_frames(cap: cv2.VideoCapture, output_dir: str, frame_indices: np.ndarray) -> int:
+    """
+    Reads specific frames from the video and saves them to disk.
     
-    print(f"Processing '{video_path}'...")
-    print(f"Segment: {start_time}s to {end_time}s | Extracting {num_frames} frames...")
-    
+    Parameters:
+        cap (cv2.VideoCapture): Open video capture object.
+        output_dir (str): Directory to save images.
+        frame_indices (np.ndarray): Array of frame indices to extract.
+    Returns:
+        int: Number of frames successfully saved.
+    """
+    os.makedirs(output_dir, exist_ok=True)
     saved_count = 0
+    
     for i, frame_idx in enumerate(frame_indices):
-        # Jump directly to the specific frame index
+        # jump to the exact frame we calculated instead of reading one by one to save time
         cap.set(cv2.CAP_PROP_POS_FRAMES, frame_idx)
         ret, frame = cap.read()
         
         if ret:
-            # Save frame as a JPEG image (e.g., frame_01.jpg, frame_02.jpg)
             filename = os.path.join(output_dir, f"frame_{i+1:02d}.jpg")
             cv2.imwrite(filename, frame)
             saved_count += 1
-        else:
-            print(f"Warning: Could not read frame at index {frame_idx}")
             
-    cap.release()
-    print(f"Successfully saved {saved_count} frames to '{output_dir}'\n")
+    return saved_count
+
+def process_video_segment(video_path: str, output_dir: str, start_time: float, end_time: float, num_frames: int = 50) -> None:
+    """
+    Main function to extract a fixed number of frames from a video segment.
+    
+    Parameters:
+        video_path (str): Path to the input video.
+        output_dir (str): Directory for output frames.
+        start_time (float): Start time in seconds.
+        end_time (float): End time in seconds.
+        num_frames (int): Frames to extract (default 50).
+    Returns:
+        None
+    """
+    try:
+        cap, fps, total_frames = get_video_info(video_path)
+        indices = calculate_frame_indices(start_time, end_time, fps, total_frames, num_frames)
+        saved = extract_and_save_frames(cap, output_dir, indices)
+        print(f"Saved {saved}/{num_frames} frames to {output_dir}")
+    except Exception as e:
+        print(f"Error processing {video_path}: {e}")
+    finally:
+        if 'cap' in locals():
+            cap.release()
 
 if __name__ == "__main__":
-    # --- Example Usage ---
-    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-    
-    # Simulating a video in the raw_videos directory
-    sample_video_path = os.path.join(base_dir, "data", "raw_videos", "sample_video.mp4")
-    output_folder = os.path.join(base_dir, "data", "processed_frames", "sample_video")
-    
-    # Example ground truth annotation (e.g., dangerous event from 5.5s to 12.0s)
-    ground_truth_start = 5.5
-    ground_truth_end = 12.0
-    
-    if os.path.exists(sample_video_path):
-        extract_frames(
-            video_path=sample_video_path,
-            output_dir=output_folder,
-            start_time=ground_truth_start,
-            end_time=ground_truth_end,
-            num_frames=50
-        )
-    else:
-        print(f"To test this script, place a video named 'sample_video.mp4' in 'data/raw_videos/'")
-        print(f"Path looked for: {sample_video_path}")
+    # Test block
+    process_video_segment(
+        video_path="../../data/raw_videos/sample.mp4",
+        output_dir="../../data/processed_frames/sample",
+        start_time=5.0,
+        end_time=12.0
+    )
