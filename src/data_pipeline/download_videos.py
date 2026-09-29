@@ -31,7 +31,7 @@ def download_youtube_video(url: str, output_path: str) -> bool:
     # 'ignoreerrors' ensures if a YouTube video was deleted by the creator, 
     # the script just moves on to the next one instead of crashing entirely.
     ydl_opts = {
-        'format': 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best',
+        'format': 'bestvideo[ext=mp4]/best[ext=mp4]',
         'outtmpl': output_path,
         'quiet': True,
         'no_warnings': True,

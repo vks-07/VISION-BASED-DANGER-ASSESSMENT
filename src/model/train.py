@@ -3,8 +3,8 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader
-from dataset import DangerDataset
-from mlp_network import DangerScoreNetwork
+from src.model.dataset import DangerDataset
+from src.model.mlp_network import DangerScoreNetwork
 
 def init_training_components(embeddings_dir: str) -> tuple:
     """
