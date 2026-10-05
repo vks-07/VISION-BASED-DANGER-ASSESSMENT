@@ -83,21 +83,21 @@ function App() {
             <h2>Predicted Danger Score</h2>
             <div className="score-display">
               <span className="score-number">{score.toFixed(2)}</span>
-              <span className="score-max">/ 5.0</span>
+              <span className="score-max">/ 10.0</span>
             </div>
             
             <div className="progress-bar-bg">
               <div 
                 className="progress-bar-fill" 
                 style={{ 
-                  width: `${(score / 5.0) * 100}%`, 
-                  backgroundColor: score >= 3.5 ? '#ff4757' : (score >= 2.0 ? '#ffa502' : '#2ed573') 
+                  width: `${(score / 10.0) * 100}%`, 
+                  backgroundColor: score >= 7.0 ? '#ff4757' : (score >= 4.0 ? '#ffa502' : '#2ed573') 
                 }}
               ></div>
             </div>
             
             <p className="score-label">
-              {score >= 3.5 ? 'HIGH DANGER ⚠️' : (score >= 2.0 ? 'MODERATE RISK ⚠️' : 'LOW RISK ✅')}
+              {score >= 7.0 ? 'HIGH DANGER ⚠️' : (score >= 4.0 ? 'MODERATE RISK ⚠️' : 'LOW RISK ✅')}
             </p>
           </div>
         )}
