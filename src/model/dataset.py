@@ -13,7 +13,7 @@ class DangerDataset(Dataset):
         self.embeddings_dir = embeddings_dir
         self.dataset = load_dataset(hf_dataset_name, split=split)
         
-        # Pre-filter dataset to only include rows where we successfully generated embeddings
+        # Pre-filter dataset to only include rows with successfully generated embeddings
         self.valid_records = []
         for row in self.dataset:
             vid = row['video_id']
@@ -43,10 +43,7 @@ class DangerDataset(Dataset):
         visual_emb = np.load(visual_path)
         text_emb = np.load(text_path)
 
-        # Temporal Pooling:
-        # If the visual embedding has multiple frames (e.g., 50x768), 
-        # we average them along axis 0 to collapse the temporal dimension 
-        # into a single 1D vector (768,). This avoids needing a heavy RNN.
+        # Temporal Pooling: Average frames to a 1D vector (768,)
         if len(visual_emb.shape) == 2:
             visual_emb = np.mean(visual_emb, axis=0)
             

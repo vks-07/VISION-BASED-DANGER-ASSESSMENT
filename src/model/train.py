@@ -19,11 +19,8 @@ def init_training_components(embeddings_dir: str) -> tuple:
     dataloader = DataLoader(dataset, batch_size=16, shuffle=True)
     
     model = DangerScoreNetwork()
-    
-    # MSE is the standard loss function for continuous regression tasks, 
-    # measuring the squared distance between predicted rating and actual rating.
     criterion = nn.MSELoss()
-    optimizer = optim.Adam(model.parameters(), lr=1e-3)
+    optimizer = optim.Adam(model.parameters(), lr=5e-4, weight_decay=1e-3)
     
     return dataloader, model, criterion, optimizer
 
@@ -77,7 +74,7 @@ def train_pipeline() -> None:
         return
         
     print(f"Starting training on {len(dataloader.dataset)} samples...")
-    run_training_loop(epochs=10, dataloader=dataloader, model=model, criterion=criterion, optimizer=optimizer)
+    run_training_loop(epochs=50, dataloader=dataloader, model=model, criterion=criterion, optimizer=optimizer)
     
     save_path = os.path.join(model_save_dir, "danger_model.pth")
     torch.save(model.state_dict(), save_path)
