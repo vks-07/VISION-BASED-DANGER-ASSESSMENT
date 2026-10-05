@@ -26,10 +26,6 @@ def download_youtube_video(url: str, output_path: str) -> bool:
     Returns:
         bool: True if successful, False if download failed.
     """
-    # yt-dlp configuration:
-    # We enforce 'mp4' so OpenCV can read it natively without codec issues later.
-    # 'ignoreerrors' ensures if a YouTube video was deleted by the creator, 
-    # the script just moves on to the next one instead of crashing entirely.
     ydl_opts = {
         'format': 'bestvideo[ext=mp4]/best[ext=mp4]',
         'outtmpl': output_path,
@@ -40,7 +36,6 @@ def download_youtube_video(url: str, output_path: str) -> bool:
     
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-            # ydl.download returns 0 if successful
             error_code = ydl.download([url])
             return error_code == 0
     except Exception as e:
@@ -71,7 +66,6 @@ def download_all_videos(output_dir: str, limit: int = 5) -> None:
         url = record['url']
         out_path = os.path.join(output_dir, vid_id)
         
-        # Skip if we already downloaded it previously
         if os.path.exists(out_path):
             print(f"Already exists: {vid_id}")
             success_count += 1
@@ -81,11 +75,9 @@ def download_all_videos(output_dir: str, limit: int = 5) -> None:
         if download_youtube_video(url, out_path):
             success_count += 1
             
-    print(f"Finished! Successfully secured {success_count}/{len(video_records)} videos.")
+    print(f"Finished! Downloaded {success_count}/{len(video_records)} videos.")
 
 if __name__ == "__main__":
-    # Test block: downloading just the first 5 videos to test the pipeline.
-    # Change limit=0 to download the entire dataset.
     base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
     raw_vids_dir = os.path.join(base_dir, "data", "raw_videos")
     download_all_videos(raw_vids_dir, limit=5)
