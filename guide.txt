@@ -1,0 +1,66 @@
+1. The Core Logic
+
+The goal of this project is to build an Artificial Intelligence system that behaves like a human safety inspector. Instead of just saying "Yes, this is an anomaly" or "No, this is normal," it needs to look at a video, read a description of the context, and output a continuous danger score from 0.0 (safe) to 10.0 (life-threatening).
+
+Because it requires both Video and Text to make a decision, it is called a Multimodal Continuous Regression pipeline.
+
+2. How Implementation Started
+
+We started by defining the data. We chose the pranked03/ViDAS dataset from Hugging Face because it contains 100 YouTube videos featuring varying degrees of danger, heavily annotated by humans with 0-10 scores, text summaries, and exact danger timestamps.
+
+The First Step: We wrote download_videos.py using yt-dlp.
+
+Why yt-dlp? It is the most robust tool for scraping YouTube. We configured it to only download the mp4 video track (ignoring audio) to save disk space and prevent FFmpeg merging errors.
+Why not other options? Standard Python requests or older libraries like pytube constantly break due to YouTube's anti-bot protections. yt-dlp bypasses these easily.
+3. How It Was Implemented (Feature Extraction)
+
+Raw video files are too massive and chaotic for a neural network to understand directly. We had to convert the videos and text into raw mathematical numbers (Embeddings).
+
+Step A: Preprocessing with OpenCV We used OpenCV to read the .mp4 file and mathematically extract exactly 50 equally spaced image frames from the danger timestamp.
+
+Why OpenCV? It uses C++ under the hood, making it lightning-fast. It allows us to jump to specific frames in memory without processing the whole video.
+Why not FFmpeg? FFmpeg is great for terminal commands but very clumsy to integrate into a dynamic Python loop where we need exact frame counts.
+
+Step B: Visual Understanding (CLIP) We passed those 50 images through OpenAI's CLIP model (clip-vit-base-patch32), which outputs a 768-dimensional vector for each frame. We then used Temporal Mean Pooling (averaging the 50 vectors into 1 single vector).
+
+Why CLIP? CLIP was trained on 400 million images and text. It understands high-level semantic concepts (like "reckless driving").
+Why not ResNet or YOLO? YOLO and ResNet are classification models. They only know how to identify specific objects (like "car" or "dog"). They don't understand the abstract concept of danger.
+
+Step C: Contextual Understanding (BERT) We passed the text description through Hugging Face's BERT model, resulting in another 768-dimensional vector.
+
+Why BERT? It reads text bidirectionally, understanding context.
+Why not TF-IDF or Word2Vec? Older algorithms just count word frequency. BERT understands that "He dodged the car safely" is fundamentally different from "He could not dodge the car."
+4. How Training is Happening
+
+Now we have a 768 visual vector and a 768 text vector. We fused them together into a massive 1536-dimensional array and fed it into our "Brain"—a custom PyTorch Multi-Layer Perceptron (MLP).
+
+The Training Loop:
+
+Forward Pass: The MLP looks at the 1536 numbers and takes a guess (e.g., 3.5).
+Loss Calculation: The actual human rating was 8.0. We use Mean Squared Error (MSE) to calculate the penalty (8.0 - 3.5)^2.
+Why MSE? Because we are predicting a continuous number.
+Why not Cross-Entropy? Cross-entropy is for sorting things into categories (like Dog vs. Cat), not sliding scales.
+Backpropagation: The Adam Optimizer updates the network's weights to guess higher next time.
+
+The Crucial Fixes We Made During Training:
+
+LayerNorm: Initially, the massive 1536-dim vectors were causing "exploding gradients", making the model guess 10.0 for everything. We added Layer Normalization to squish the numbers into a stable distribution.
+Dropout & Shrinking: Because we only had 81 videos, our initial 512-neuron network was suffering from the Curse of Dimensionality (memorizing noise instead of learning). We shrank it to 128 neurons and added Dropout(0.5) to randomly turn off 50% of the brain during training, forcing it to generalize.
+Sigmoid * 10: We pass the final number through a Sigmoid function and multiply by 10.0. This mathematically guarantees the model can NEVER predict a score below 0 or above 10.
+5. How Testing & Prediction Works (The Final App)
+
+To make this usable, we didn't just leave it in terminal scripts. We built a FastAPI backend and a React frontend.
+
+The Detailed Prediction Flow:
+
+You drag a video into the React UI and type a description. React sends a multipart/form-data request to FastAPI.
+FastAPI saves the video to a temporary file.
+Crucially, FastAPI already loaded the massive CLIP and BERT models into RAM when the server started (Model Caching). If it loaded them on every click, it would take 30 seconds per prediction!
+OpenCV dynamically calculates the duration of your uploaded video and extracts 50 uniform frames.
+CLIP and BERT run their extraction, outputting the vectors.
+The vectors pass through the trained PyTorch danger_model.pth weights.
+The PyTorch model outputs a final score (e.g., 4.88).
+FastAPI deletes the temporary video from your hard drive to save space and sends the score back to React as a JSON.
+React dynamically colors the progress bar (Green/Orange/Red) based on the exact threshold of the score.
+Why FastAPI? It is asynchronous, modern, and handles file uploads perfectly.
+Why not Flask or Django? Django is too bloated for a simple AI microservice. Flask is synchronous and much slower for heavy AI inference tasks.
