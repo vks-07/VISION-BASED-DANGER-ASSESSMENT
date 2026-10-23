@@ -48,6 +48,8 @@ The system uses a 4-stage pipeline:
 
 ## 🚀 Installation & Setup
 
+> 💡 For an in-depth developer guide, environment setup for Windows/Linux/macOS, architecture walkthrough, and troubleshooting, see [SETUP.md](SETUP.md).
+
 **1. Clone and Setup Python Environment**
 ```bash
 # Create and activate a virtual environment
