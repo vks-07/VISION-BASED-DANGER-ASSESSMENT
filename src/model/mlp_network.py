@@ -40,8 +40,15 @@ class DangerScoreNetwork(nn.Module):
         Returns:
             torch.Tensor: Bounded danger score between 0.0 and 10.0.
         """
+        # Automatically handle unbatched and batched inputs
+        if text_embedding.dim() == 1:
+            text_embedding = text_embedding.unsqueeze(0)
+            
         if visual_embedding.dim() == 2:
-            visual_embedding = visual_embedding.unsqueeze(1)
+            if visual_embedding.shape[0] == text_embedding.shape[0]:
+                visual_embedding = visual_embedding.unsqueeze(1)
+            else:
+                visual_embedding = visual_embedding.unsqueeze(0)
             
         # 1. Bi-LSTM captures motion patterns across the video frames
         lstm_out, _ = self.temporal_lstm(visual_embedding)
