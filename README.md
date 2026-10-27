@@ -11,11 +11,13 @@ The system uses a 4-stage pipeline:
 1. **Preprocessing (OpenCV):** 
    Dynamically calculates the video duration and extracts exactly 50 uniform frames, allowing for programmatic manipulation without fully decoding the video stream.
 2. **Visual Feature Extraction (CLIP):** 
-   Passes frames through OpenAI's `clip-vit-base-patch32`. It uses **Temporal Mean Pooling** to average the 50 resulting vectors into a single mathematically dense `1x768` vector representing the overall "danger concepts" of the scene.
+   Passes frames through OpenAI's `clip-vit-base-patch32` to produce a 50-frame temporal sequence `(50, 768)` capturing visual attributes.
 3. **Text Feature Extraction (BERT):** 
    Passes the user's text description through `bert-base-uncased` to extract a `1x768` vector, grounding the visual data with bidirectional semantic context.
-4. **Regression Engine (PyTorch MLP):** 
-   Fuses the vectors into 1536 dimensions. To combat the *Curse of Dimensionality* on our dataset, the network utilizes `LayerNorm` (to prevent exploding gradients), aggressive `Dropout(0.5)`, and `L2 Weight Decay`. The final output is bounded by `Sigmoid * 10.0` to mathematically guarantee a valid score.
+4. **Temporal Modeling & Cross-Attention (PyTorch Engine):** 
+   * **Bi-LSTM Sequence Modeling:** Reads the 50-frame sequence forward and backward to capture motion dynamics, velocity, and acceleration.
+   * **Multimodal Cross-Attention:** Text queries the visual frame sequence to dynamically attend to critical hazard frames.
+   * **Robust Training:** Trained with **Huber (Smooth L1) Loss** and **Pairwise Ranking Loss** to prevent regression-to-the-mean, combined with temporal frame masking and sensor noise data augmentation. Output bounded via `Sigmoid * 10.0`.
 
 ---
 

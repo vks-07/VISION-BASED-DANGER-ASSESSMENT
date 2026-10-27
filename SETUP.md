@@ -34,9 +34,12 @@ Ensure the following tools are installed on your machine:
 
 The pipeline computes a continuous danger score from **0.0 (Safe)** to **10.0 (High Danger)** using multimodal deep learning:
 1. **Video Preprocessing (`OpenCV`)**: Samples 50 uniform frames across the video segment.
-2. **Visual Feature Extraction (`CLIP`)**: Uses `openai/clip-vit-base-patch32` to produce 768-dimensional visual vectors, squashed via Temporal Mean Pooling.
+2. **Visual Feature Extraction (`CLIP`)**: Uses `openai/clip-vit-base-patch32` to produce 768-dimensional visual vectors across the 50 frames.
 3. **Text Feature Extraction (`BERT`)**: Uses `bert-base-uncased` to encode contextual text descriptions into a 768-dimensional vector.
-4. **Multimodal Regression (`PyTorch MLP`)**: Concatenates both vectors into a 1536-dimensional representation, stabilized by `LayerNorm`, `Dropout(0.5)`, and `L2 Weight Decay`, projecting to a bounded 0–10 score using `Sigmoid * 10.0`.
+4. **Temporal Modeling & Cross-Attention (`PyTorch`)**:
+   - **Bi-LSTM**: Captures bidirectional temporal motion dynamics across the 50 frames.
+   - **Cross-Attention**: Text queries the visual frame sequence to locate exact hazardous moments.
+   - **Huber + Ranking Loss**: Trained with Smooth L1 and pairwise ranking loss, plus temporal frame masking and sensor noise augmentation to prevent regression to the mean.
 5. **Full-Stack Interface**: A **FastAPI** backend caching the foundation models in RAM and a **React + Vite** frontend.
 
 ---
