@@ -43,7 +43,7 @@ def init_training_components(embeddings_dir: str) -> tuple:
     Returns:
         tuple: (dataloader, model, optimizer)
     """
-    dataset = DangerDataset(embeddings_dir)
+    dataset = DangerDataset(embeddings_dir, augment=True)
     dataloader = DataLoader(dataset, batch_size=16, shuffle=True)
     
     model = DangerScoreNetwork()

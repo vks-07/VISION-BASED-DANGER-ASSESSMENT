@@ -7,10 +7,11 @@ from typing import Tuple
 
 class DangerDataset(Dataset):
     """
-    PyTorch Dataset loading pre-extracted embeddings and ground truth ratings.
+    PyTorch Dataset loading pre-extracted embeddings with temporal data augmentation.
     """
-    def __init__(self, embeddings_dir: str, hf_dataset_name: str = "pranked03/ViDAS", split: str = "train"):
+    def __init__(self, embeddings_dir: str, hf_dataset_name: str = "pranked03/ViDAS", split: str = "train", augment: bool = False):
         self.embeddings_dir = embeddings_dir
+        self.augment = augment
         self.dataset = load_dataset(hf_dataset_name, split=split)
         
         # Pre-filter dataset to only include rows with successfully generated embeddings
@@ -26,7 +27,7 @@ class DangerDataset(Dataset):
 
     def __getitem__(self, idx: int) -> Tuple[torch.Tensor, torch.Tensor, torch.Tensor]:
         """
-        Retrieves a single sample from the dataset.
+        Retrieves a single sample from the dataset with optional temporal data augmentation.
         
         Parameters:
             idx (int): Index of the sample.
@@ -47,10 +48,17 @@ class DangerDataset(Dataset):
         if len(visual_emb.shape) == 1:
             visual_emb = np.expand_dims(visual_emb, axis=0)
             
-        text_emb = np.squeeze(text_emb)
+        visual_tensor = torch.tensor(visual_emb, dtype=torch.float32)
+        text_tensor = torch.tensor(np.squeeze(text_emb), dtype=torch.float32)
 
-        return (
-            torch.tensor(visual_emb, dtype=torch.float32), 
-            torch.tensor(text_emb, dtype=torch.float32), 
-            rating
-        )
+        # Training augmentation: Temporal frame masking and feature noise
+        if self.augment:
+            # 1. Add mild sensor camera noise to prevent exact vector memorization
+            noise = torch.randn_like(visual_tensor) * 0.015
+            visual_tensor = visual_tensor + noise
+            
+            # 2. Random temporal frame masking: randomly drops 10% of frames to simulate frame drops
+            mask = (torch.rand(visual_tensor.shape[0], 1) > 0.1).float()
+            visual_tensor = visual_tensor * mask
+
+        return (visual_tensor, text_tensor, rating)
