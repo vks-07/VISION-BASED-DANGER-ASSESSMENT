@@ -4,9 +4,9 @@ import torch.nn.functional as F
 
 class DangerScoreNetwork(nn.Module):
     """
-    Multimodal Danger Score Network with Bi-LSTM temporal sequence modeling.
+    Multimodal Danger Score Network with Bi-LSTM temporal modeling and Cross-Attention fusion.
     """
-    def __init__(self, visual_dim: int = 768, text_dim: int = 768, hidden_dim: int = 128):
+    def __init__(self, visual_dim: int = 768, text_dim: int = 768, hidden_dim: int = 128, num_heads: int = 4):
         super().__init__()
         
         # Bi-LSTM processes the 50 frames to model motion and speed over time
@@ -17,6 +17,13 @@ class DangerScoreNetwork(nn.Module):
             bidirectional=True
         )
         
+        # Cross-Attention: Text queries the visual frame sequence to find hazard moments
+        self.cross_attention = nn.MultiheadAttention(
+            embed_dim=visual_dim,
+            num_heads=num_heads,
+            batch_first=True
+        )
+        
         combined_dim = visual_dim + text_dim
         self.ln_input = nn.LayerNorm(combined_dim)
         self.fc1 = nn.Linear(combined_dim, hidden_dim)
@@ -25,7 +32,7 @@ class DangerScoreNetwork(nn.Module):
 
     def forward(self, visual_embedding: torch.Tensor, text_embedding: torch.Tensor) -> torch.Tensor:
         """
-        Computes continuous danger score from visual frame sequence and text context.
+        Computes danger score using temporal modeling and cross-attention between text and video.
         
         Parameters:
             visual_embedding (torch.Tensor): Visual frame vectors of shape (batch, frames, 768) or (batch, 768).
@@ -33,15 +40,22 @@ class DangerScoreNetwork(nn.Module):
         Returns:
             torch.Tensor: Bounded danger score between 0.0 and 10.0.
         """
-        # If input is 2D (batch, 768), add sequence dimension
         if visual_embedding.dim() == 2:
             visual_embedding = visual_embedding.unsqueeze(1)
             
-        # Bi-LSTM tracks how the danger evolves from frame 0 to frame 49
+        # 1. Bi-LSTM captures motion patterns across the video frames
         lstm_out, _ = self.temporal_lstm(visual_embedding)
-        visual_feat = torch.mean(lstm_out, dim=1)
         
-        x = torch.cat((visual_feat, text_embedding), dim=1)
+        # 2. Cross-Attention: Text description acts as Query to find relevant video frames
+        query = text_embedding.unsqueeze(1)
+        attended_frames, _ = self.cross_attention(query=query, key=lstm_out, value=lstm_out)
+        attended_visual = attended_frames.squeeze(1)
+        
+        # Residual fusion: combine attended visual features with text context
+        fused_text = text_embedding + attended_visual
+        visual_summary = torch.mean(lstm_out, dim=1)
+        
+        x = torch.cat((visual_summary, fused_text), dim=1)
         x = self.ln_input(x)
         
         x = F.relu(self.fc1(x))
