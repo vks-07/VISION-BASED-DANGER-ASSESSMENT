@@ -43,9 +43,9 @@ class DangerDataset(Dataset):
         visual_emb = np.load(visual_path)
         text_emb = np.load(text_path)
 
-        # Temporal Pooling: Average frames to a 1D vector (768,)
-        if len(visual_emb.shape) == 2:
-            visual_emb = np.mean(visual_emb, axis=0)
+        # Ensure visual embedding has temporal sequence dimension (frames, 768)
+        if len(visual_emb.shape) == 1:
+            visual_emb = np.expand_dims(visual_emb, axis=0)
             
         text_emb = np.squeeze(text_emb)
 

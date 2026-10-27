@@ -58,8 +58,9 @@ async def predict_danger_score(video: UploadFile, description: str = Form(...)):
         images = load_images_from_folder(frames_dir)
         visual_emb = process_images_through_clip(images, clip_model, clip_processor, clip_device)
         
-        # Temporal pooling
-        visual_emb = np.mean(visual_emb, axis=0, keepdims=True)
+        # Keep full 50-frame sequence for temporal modeling: (1, 50, 768)
+        if len(visual_emb.shape) == 2:
+            visual_emb = np.expand_dims(visual_emb, axis=0)
         visual_tensor = torch.tensor(visual_emb, dtype=torch.float32)
         
         text_emb = process_text_through_bert(description, bert_model, bert_tokenizer, bert_device)
