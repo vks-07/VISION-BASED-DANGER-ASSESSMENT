@@ -102,3 +102,11 @@ This master script will automatically:
 2. Extract frames via OpenCV.
 3. Generate and save `.npy` CLIP and BERT embeddings.
 4. Run the 50-epoch PyTorch training loop and save the new weights.
+
+### Expanding with UCF-Crime & Dashcam Datasets
+To expand the training data with real-world surveillance anomalies (Assault, Fight, Arson, Explosion) and Dashcam traffic/pedestrian collision hazards:
+```bash
+python src/data_pipeline/expand_dataset.py
+python -m src.model.train
+```
+This automatically updates `data/dataset_metadata.json` and trains on the unified multimodal dataset.

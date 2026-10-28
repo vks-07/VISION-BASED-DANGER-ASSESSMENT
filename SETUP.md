@@ -126,7 +126,15 @@ python train_full_dataset.py
 1. **Downloads Videos**: Uses `yt-dlp` to download videos from the Hugging Face `pranked03/ViDAS` dataset into `data/raw_videos/`.
 2. **Extracts Frames**: Uses OpenCV to sample 50 uniform frames per video into `data/processed_frames/`.
 3. **Generates Embeddings**: Passes frames through CLIP and summaries through BERT, saving vectors as `.npy` files in `data/embeddings/`.
-4. **Trains Neural Network**: Runs 50 epochs using Adam optimizer and MSE loss, saving the final weights to `data/models/danger_model.pth`.
+4. **Trains Neural Network**: Runs 50 epochs using Adam optimizer and combined Huber + Pairwise Ranking loss, saving the final weights to `data/models/danger_model.pth`.
+
+### Expanding with UCF-Crime & Dashcam Traffic Datasets
+To expand training data with real-world surveillance anomalies (Assault, Fight, Arson, Explosion) and Dashcam traffic/pedestrian collision hazards:
+```bash
+python src/data_pipeline/expand_dataset.py
+python -m src.model.train
+```
+This updates `data/dataset_metadata.json` and trains on the unified 96-sample multimodal dataset.
 
 ---
 

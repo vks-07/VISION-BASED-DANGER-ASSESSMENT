@@ -91,13 +91,13 @@ function App() {
                 className="progress-bar-fill" 
                 style={{ 
                   width: `${(score / 10.0) * 100}%`, 
-                  backgroundColor: score >= 7.0 ? '#ff4757' : (score >= 4.0 ? '#ffa502' : '#2ed573') 
+                  backgroundColor: score >= 6.5 ? '#ff4757' : (score >= 3.5 ? '#ffa502' : '#2ed573') 
                 }}
               ></div>
             </div>
             
             <p className="score-label">
-              {score >= 7.0 ? 'HIGH DANGER ⚠️' : (score >= 4.0 ? 'MODERATE RISK ⚠️' : 'LOW RISK ✅')}
+              {score >= 6.5 ? 'HIGH DANGER ⚠️' : (score >= 3.5 ? 'MODERATE RISK ⚠️' : 'LOW RISK ✅')}
             </p>
           </div>
         )}
