@@ -1,4 +1,5 @@
 import os
+import json
 import torch
 import numpy as np
 from torch.utils.data import Dataset
@@ -7,20 +8,33 @@ from typing import Tuple
 
 class DangerDataset(Dataset):
     """
-    PyTorch Dataset loading pre-extracted embeddings with temporal data augmentation.
+    PyTorch Dataset loading pre-extracted embeddings with temporal data augmentation
+    from unified multi-source dataset (ViDAS + UCF-Crime + Dashcam).
     """
     def __init__(self, embeddings_dir: str, hf_dataset_name: str = "pranked03/ViDAS", split: str = "train", augment: bool = False):
         self.embeddings_dir = embeddings_dir
         self.augment = augment
-        self.dataset = load_dataset(hf_dataset_name, split=split)
-        
-        # Pre-filter dataset to only include rows with successfully generated embeddings
         self.valid_records = []
-        for row in self.dataset:
-            vid = row['video_id']
-            if os.path.exists(os.path.join(embeddings_dir, f"{vid}_visual.npy")) and \
-               os.path.exists(os.path.join(embeddings_dir, f"{vid}_text.npy")):
-                self.valid_records.append(row)
+        
+        base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+        metadata_path = os.path.join(base_dir, "data", "dataset_metadata.json")
+        
+        # Prioritize unified dataset metadata if available
+        if os.path.exists(metadata_path):
+            with open(metadata_path, "r") as f:
+                records = json.load(f)
+            for item in records:
+                vid = item['video_id']
+                if os.path.exists(os.path.join(embeddings_dir, f"{vid}_visual.npy")) and \
+                   os.path.exists(os.path.join(embeddings_dir, f"{vid}_text.npy")):
+                    self.valid_records.append(item)
+        else:
+            self.dataset = load_dataset(hf_dataset_name, split=split)
+            for row in self.dataset:
+                vid = row['video_id']
+                if os.path.exists(os.path.join(embeddings_dir, f"{vid}_visual.npy")) and \
+                   os.path.exists(os.path.join(embeddings_dir, f"{vid}_text.npy")):
+                    self.valid_records.append(row)
 
     def __len__(self) -> int:
         return len(self.valid_records)
@@ -36,7 +50,7 @@ class DangerDataset(Dataset):
         """
         item = self.valid_records[idx]
         video_id = item['video_id']
-        rating = torch.tensor([item['rating']], dtype=torch.float32)
+        rating = torch.tensor([float(item['rating'])], dtype=torch.float32)
 
         visual_path = os.path.join(self.embeddings_dir, f"{video_id}_visual.npy")
         text_path = os.path.join(self.embeddings_dir, f"{video_id}_text.npy")

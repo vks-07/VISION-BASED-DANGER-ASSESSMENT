@@ -1,0 +1,578 @@
+[
+  {
+    "video_id": "0.mp4",
+    "rating": 2.94444,
+    "summary": "The video shows a car driving over a dilapidated bridge. The bridge is missing many of its wooden planks, and the metal railings are broken and rusted. The car is not using any visible safety equipment, and there is no indication that a professional is working on the bridge. There are no other humans visible in the video. It is unknown what the aftermath of this event will be, however, the potential aftermath of the danger could be that the car falls through the bridge and the driver is injured or killed.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "1.mp4",
+    "rating": 6.0,
+    "summary": "The video shows a crowded escalator in what appears to be a subway station rapidly collapsing at the bottom, trapping many people between the metal plates. The danger is the escalator collapsing and injuring the people on it.  There is no safety equipment visible, and it is not clear if a professional is working on it. Many humans are affected, as the escalator appears to be full. The aftermath shows firefighters rescuing people and loading them into an ambulance, indicating injuries did occur. It was reported that at least one person required an amputation and many more sustained serious injuries.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "2.mp4",
+    "rating": 7.66667,
+    "summary": "The video takes place in a warehouse-type environment, likely a metal recycling or processing facility.  The danger is an uncontrolled fire that rapidly erupts when a forklift operator appears to accidentally dump a load of potentially flammable material into a furnace. There are no visible warning signs, and the operator does not appear to be wearing any specialized safety gear. Given the environment and the lack of visible safety precautions, it's likely a professional is operating the forklift. The flames engulf the forklift, posing a severe risk of burns or even death to the operator.  Even if the operator escaped the initial blast, the potential aftermath includes severe burns, smoke inhalation, and potential long-term health consequences.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "3.mp4",
+    "rating": 2.16667,
+    "summary": "The video takes place on a busy street. A man is standing next to an auto-rickshaw parked on the side of the road when a police SUV swerves across two lanes of traffic and forces its way between two buses, almost hitting the man and the rickshaw in the process.  The danger is the reckless driving of the police SUV, which could have easily resulted in a serious accident. There is no visible safety equipment being used. It is unclear if the driver of the SUV is a professional police officer, but the vehicle is outfitted with police insignia. If the SUV had collided with the man or the rickshaw, serious injuries or even death could have occurred.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "4.mp4",
+    "rating": 4.55556,
+    "summary": "This video shows a multi-car pile-up that has occurred within a highway tunnel. The drivers involved in the accident are not using any visible safety equipment beyond their seatbelts and airbags, and there is no indication that a professional such as a first responder is present at the scene. The cause of the accident is not shown, but the video begins with several cars already stopped in the tunnel, suggesting that a prior collision may have triggered the pile-up. Multiple vehicles are damaged, including a white SUV that appears to have sustained significant front-end damage. Though we do not see what led to the pileup, driving too fast for conditions and failure to maintain a safe distance are likely contributing factors. While the aftermath is not shown, the potential consequences of the event could include injuries to the drivers and passengers involved, ranging from minor cuts and bruises to more serious injuries such as broken bones or head trauma.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "5.mp4",
+    "rating": 2.5,
+    "summary": "The video depicts a chaotic scene on a snowy city street where multiple vehicles are losing control and colliding with each other and a tree due to the slick road conditions. There is no safety equipment visible, and it does not appear that professionals are involved with the vehicles. Several people are present and at risk of being injured. While the immediate aftermath of the collisions is not shown, the potential consequences include vehicle damage, injuries from the crashes, and further collisions due to the hazardous driving conditions.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "6.mp4",
+    "rating": 5.44444,
+    "summary": "The video shows a controlled demolition of two high-rise buildings. The danger is the implosion of the buildings which could cause injury or death if not done properly. There is no visible safety equipment being used by the observers. While we don't see the professionals, a controlled demolition like this is orchestrated by trained professionals. It is unlikely there are humans within the blast radius of these buildings, but the aftermath is not shown so we cannot confirm. The potential aftermath, if done incorrectly, would be death and injury of anyone within the blast radius. The environment looks to be rural, potentially near a body of water given the sailboat in the background. No warning signs are visible.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "7.mp4",
+    "rating": 6.27778,
+    "summary": "The video shows a construction worker climbing up and down scaffolding at an extremely high height without any safety harnesses or fall protection. It is unclear if he is a trained professional.  The environment appears to be a multi-level construction site with other workers present on the ground, a highway, and buildings. While the aftermath of the dangerous situation is not shown, the potential consequences of a fall from that height would be severe injury or death.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "8.mp4",
+    "rating": 3.77778,
+    "summary": "The video shows a woman in a living room putting her baby into a hammock suspended just above the hard tile floor while a snake is loose and unnoticed in the room. The woman does not appear to be using any safety equipment, and is not a professional. Although the aftermath is not shown, the potential consequence of this dangerous situation is that the hammock could flip, or the baby could fall out of the hammock resulting in injury. Additionally, the snake could potentially harm the baby or the woman.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "9.mp4",
+    "rating": 7.55556,
+    "summary": "The video shows a silver SUV driving through a flooded street. There is no safety equipment visible, and it is unclear if the driver is a professional, though it is likely that they are not. The actions leading up to the dangerous event are not shown, but it is evident that there has been significant flooding in the area. There are no visible warning signs, and the driver continues to attempt to drive through the floodwater. The potential aftermath could be the car being swept away by the floodwaters, which would likely result in serious injury or death for the driver and any passengers in the car.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "10.mp4",
+    "rating": 3.55556,
+    "summary": "The video shows a man walking across a slackline-like rope suspended high in the air between a building and a teepee-like structure. The danger is that the man could fall from a significant height, potentially resulting in serious injury or death. He is not using any visible safety equipment, and it is unclear if he is a trained professional. There are other people present who could be affected by the man's actions, either by witnessing a fall or being injured themselves if the apparatus collapses. The aftermath of the event is not shown, but a fall from that height could result in broken bones, head injuries, or death.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "11.mp4",
+    "rating": 4.27778,
+    "summary": "The video shows a young man free-running across the rooftop of a multi-story building under construction. The danger lies in the man performing potentially fatal jumps and flips across large gaps and narrow ledges with no safety equipment. He does not appear to be a professional, given his casual attire and lack of safety measures. While other people are not directly affected by his actions, the potential aftermath of a misstep would be severe injury or death. The video does not show any aftermath, but given the height and lack of safety precautions, it's clear a fall would have dire consequences. The environment, with scattered construction materials and exposed edges, further amplifies the danger.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "12.mp4",
+    "rating": 5.5,
+    "summary": "The video takes place in a school cafeteria with students eating lunch. The danger in the video is choking as a young male student gets food stuck in his throat while eating. There is no safety equipment seen in the video, and a professional is not seen working on the student. Although others are nearby, the student is the only one who would be affected. The student's friend comes to his aid and performs the Heimlich maneuver successfully and the student is able to dislodge the food. There were no injuries, and he makes a full recovery.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "13.mp4",
+    "rating": 6.22222,
+    "summary": "The video shows a man free climbing a dangerous cliff face over the ocean while not wearing any safety gear. He is a professional climber, as evidenced by his skill and others like him on a different part of the cliff. The water below suggests a high chance of severe injury or death from a fall. The aftermath of the climb is not shown, but it's possible he could successfully climb the cliff face, fall into the water, or get rescued by the other climbers.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "14.mp4",
+    "rating": 7.16667,
+    "summary": "The video showcases the danger of a powerful hurricane or tornado tearing through a residential area. Strong winds and heavy rain are visible, ripping off a portion of a roof from a house, indicating the storm's intensity. There's no safety equipment or professionals visible in the video, suggesting the danger is immediate and residents are likely seeking shelter. The aftermath of the event isn't shown, but potential consequences include severe structural damage to properties, potential injuries to anyone caught outside, and possible fatalities. The environment is characteristic of a coastal region during a hurricane, with palm trees being battered by strong winds and debris flying through the air. The forceful removal of the roof acts as a stark warning sign of the storm's devastating power.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "15.mp4",
+    "rating": 6.0,
+    "summary": "The video shows a potentially dangerous situation in an industrial setting where a worker wearing a safety harness and protective gear loses his footing and falls into a deep, open pit. He is connected to a safety line that prevents him from hitting the bottom. The potential aftermath of the fall could have been severe injury or even death if not for the safety equipment. Although the aftermath wasn't shown, it's safe to assume he was likely shaken but unharmed thanks to the safety line. The environment suggests a professional setting with visible warning signs, and the worker appears to be trained for such situations.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "16.mp4",
+    "rating": 2.94444,
+    "summary": "The video depicts the danger of falls in an office setting. A woman in an office attempts to hang a birthday banner by standing on a rolling office chair with no safety equipment in use. She is not a professional and there are other people present who could be affected. Though the aftermath is not shown, the potential aftermath could be serious injury from the fall, especially if she hit her head on a desk or filing cabinet.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "18.mp4",
+    "rating": 7.0,
+    "summary": "The video captures the danger of a tsunami hitting the coast of Thailand in 2004. The footage shows a massive wave, estimated to be 15-20 feet tall, approaching a tropical beach lined with palm trees and buildings. There is no safety equipment visible, nor is a professional handling the situation. The video shows people running from the wave, indicating the imminent threat to human life. The aftermath of the tsunami is not fully shown, but the sheer size and force of the wave as it crashes onto the shore strongly suggests widespread destruction and potential loss of life in the affected area.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "19.mp4",
+    "rating": 8.0,
+    "summary": "The video is a news report about a car crash that occurred on the 401 near Port Union. The danger is a serious car crash, where a minor accident became major after being impacted by a vehicle traveling at high speed. The video shows footage from a tow truck driver's dashcam as he is assisting with a minor fender bender on the side of the highway when a car crashes into one of the vehicles involved in the initial accident, sending debris flying. No safety equipment is visible in use by the people involved in the initial minor accident, and they are not professionals working on gear. Although the aftermath is not shown, the potential aftermath of a high-speed impact such as that shown is likely serious injury or even death to the individuals involved.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "20.mp4",
+    "rating": 4.72222,
+    "summary": "The danger in the video is a tall, heavy chest of drawers tipping over in a home. There is no safety equipment being used, and no professional is present. A young child attempts to climb the drawers, causing them to fall forward, but the aftermath is not shown. It is likely the child would have been seriously injured or even killed if they had been under the drawers when they fell, and it is possible they still sustained injuries from the fall. The environment is a family living room, and there are no visible warning signs about the instability of the furniture.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "21.mp4",
+    "rating": 8.44444,
+    "summary": "The danger in the video is a multi-car pileup on a highway with a large semi-truck involved. There is no safety equipment visible in use besides the safety features of the vehicles involved. It is unclear if there are professionals working on the scene. There are clearly humans involved as multiple cars are part of the accident, and the potential aftermath is injury or death for those involved in the crash, though the aftermath is not shown in the video. It is a clear day with no adverse weather conditions, and the event takes place on a multi-lane highway with no visible warning signs leading up to the accident.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "24.mp4",
+    "rating": 0.66667,
+    "summary": "The video shows a person in a lab coat and gloves demonstrating how to safely handle hot lab equipment. The danger in the video is the hot plate, which could cause burns if touched. The person is using safety equipment, including gloves and a beaker gripper, and is a professional working with the hot plate. There are no other humans in the video that will be affected. While the aftermath is not shown, the potential aftermath of touching the hot plate while it's still hot could be skin burns. The person emphasizes the importance of turning the hot plate off and unplugging it after use, even if it's still hot, to prevent accidental burns.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "25.mp4",
+    "rating": 5.72222,
+    "summary": "The video takes place on a muddy construction site with workers moving equipment. The danger is a large metal structure, seemingly unsecured, that suddenly falls over, narrowly missing two workers who run away. All the workers are wearing hard hats, but it is unclear if they are professionals. Although the aftermath is not shown, it is possible that the workers could have been seriously injured or killed by the falling structure, especially given the lack of clear safety precautions taken to secure it.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "26.mp4",
+    "rating": 6.16667,
+    "summary": "The video depicts the danger of a powerful storm hitting Mecca, Saudi Arabia. The footage, seemingly shot by an amateur, shows strong winds and heavy rain causing chaos in the city. People are seen struggling to walk against the wind, some falling and taking cover. A large billboard is ripped from its supports and crashes to the ground, highlighting the destructive force of the storm. No safety equipment is visible, and the people in the video are ordinary citizens caught in the storm. While the aftermath is not explicitly shown, the potential for injuries from flying debris and the force of the wind is high. The storm's intensity and the precarious position of the billboard are visible warning signs of the danger. The video ends with a prayer in Arabic, likely for safety and protection from the storm.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "28.mp4",
+    "rating": 7.83333,
+    "summary": "The video shows a badminton court in an indoor gymnasium with multiple people playing on the court. The danger is a ceiling collapse, and there is no safety equipment visible. The ceiling appears to be made of a lightweight material. No professionals are seen working on the ceiling prior to the collapse. There are multiple humans in the gymnasium who will be affected by the ceiling collapse. Although the immediate aftermath is not shown, debris from the ceiling can be seen falling on the court where people were standing just moments before. The potential aftermath of this event is death or serious injury to the people on the court.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "29.mp4",
+    "rating": 6.61111,
+    "summary": "This video depicts a young man in Russia recklessly removing bricks from a structurally compromised pillar in an abandoned building, seemingly for fun. The footage, likely shot by an amateur, shows the man chipping away at the already damaged pillar despite its precarious state. There are no visible safety measures or professionals present. The middle portion of the pillar is almost entirely destroyed, indicating its instability. As the man continues to remove bricks, the pillar eventually collapses, narrowly missing him as he runs away. The aftermath shows the collapsed pillar in a cloud of dust, demonstrating the potential for serious injury or death had the man not escaped in time. The video highlights the dangers of tampering with unstable structures and the importance of prioritizing safety, even in seemingly abandoned areas.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "31.mp4",
+    "rating": 1.61111,
+    "summary": "The video shows a group of cyclists riding on a paved path in a park-like setting. The danger is that one of the cyclists, President Biden, falls off his bike while coming to a stop at a crosswalk. He is wearing a helmet and appears to be using the bike's brakes. There is no indication that a professional is working on the bike. There are other people in the video, but they are not in harm's way. The aftermath of the fall is not shown, however, the potential aftermath could include minor injuries such as cuts, bruises, or a possible head injury. It appears it would be difficult for other riders or bystanders to avoid a collision during the fall.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "32.mp4",
+    "rating": 5.05556,
+    "summary": "The video shows a woman performing dangerous motorcycle stunts in an outdoor paved arena with spectators and advertising in the background. The danger lies in the woman losing control of the motorcycle during a wheelie and potentially falling off and injuring herself. She is wearing a helmet and gloves as safety equipment. She appears to be a professional given the context of the event (spectators, advertising) but this cannot be confirmed. Only the woman on the motorcycle would be affected by the danger. The aftermath shows the woman falling off the motorcycle and landing on the ground, the potential aftermath could include injuries from the fall or from being hit by the motorcycle.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "33.mp4",
+    "rating": 7.05556,
+    "summary": "The video shows a flooded basement with a man inside, seemingly unaware of the rising waters. The danger is a rapid flood that bursts through the basement windows, sweeping away furniture and posing a serious risk of drowning or injury from debris. There is no safety equipment visible, nor a professional present. The man in the video is directly affected, and while the immediate aftermath doesn't show the outcome, it's highly likely he could have drowned, been injured by the force of the water and debris, or been trapped by the flood. The environment is a typical finished basement, with no visible warning signs prior to the windows bursting.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "34.mp4",
+    "rating": 2.05556,
+    "summary": "The video shows two workers, likely professionals given the environment, unloading a large, heavy piece of granite from a delivery truck in a warehouse/showroom. The danger lies in the potential for the granite slab to fall and crush the worker guiding it down the ramp, as he is not using any visible safety equipment and his coworker momentarily loses his grip. The aftermath is not shown, but if the granite were to fall, the worker could suffer serious injuries.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "35.mp4",
+    "rating": 3.77778,
+    "summary": "The danger in the video is a man skateboarding downhill at high speed on a winding road without a helmet or any other visible safety gear. He is not a professional and will be the only one affected by the danger. The aftermath of the dangerous event is not shown, but potentially he could suffer from road rash, broken bones.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "36.mp4",
+    "rating": 3.94444,
+    "summary": "The video shows a man in a garage workshop operating a lathe machine to polish a rotating metal piece. The red-hot metal piece gets caught in the man's loose-fitting shirt, which violently spins him around the lathe, ripping the shirt off of his back. The man is not wearing any safety equipment and is barefoot, further increasing the danger. While the video doesn't show the aftermath, it's clear that the man could have suffered severe burns, deep lacerations, or even been flung into other machinery with significant force, potentially leading to life-threatening injuries. Two people arrive at the scene and are shown holding up the ripped shirt, indicating that the man likely survived the initial event, but the extent of his injuries is unknown.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "37.mp4",
+    "rating": 3.33333,
+    "summary": "The video shows a woman preparing to dive from a high diving platform into a pool below. The environment is a public diving competition with a crowd of spectators. There is no visible safety equipment in use. As the diver takes a running start, she slips on the wet platform and accidentally dives headfirst. While the commentator expresses concern, the diver recovers mid-air and enters the water feet-first, averting a potentially fatal accident. The commentator acknowledges the seriousness of the slip and praises the diver's quick reaction. Despite the lack of visible injury, the potential aftermath of such a slip on a high platform could have been catastrophic, including severe head or spinal injury, or even death. The video highlights the inherent danger in high diving, even for professionals, and emphasizes the importance of proper precautions and attention to safety.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "38.mp4",
+    "rating": 4.88889,
+    "summary": "The video shows a circus act taking place inside a circus tent, with a crowd of people watching. The danger is a high-wire act where a group of three professional acrobats is performing stunts at a significant height without any visible safety equipment. The acrobats carefully maneuver themselves on the high wire, building a human tower. However, during the act, one of the acrobats loses balance and falls. The aftermath is not shown, but given the height and lack of safety nets, the potential aftermath could be severe injury or even death for the fallen acrobat.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "39.mp4",
+    "rating": 3.77778,
+    "summary": "The danger in this video is an elephant sticking its trunk inside a bus full of passengers. There is no safety equipment being used and no professionals are working on the situation, just the bus driver and passengers trying to deal with the elephant. Many humans are potentially affected by the elephant reaching inside the bus, as it could easily grab someone or something with its trunk. Though the aftermath of the event is not shown, the elephant could potentially injure or even kill someone by grabbing them with its trunk or thrashing it around inside the bus. The video takes place in a rural environment with a bus driving along a road when it is approached by an elephant that stops the bus and then reaches its trunk inside the front windows of the bus. There are no visible warning signs about elephants in the area.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "40.mp4",
+    "rating": 7.44444,
+    "summary": "The video shows a woman preparing to dive from a high diving platform into a pool below. The environment is a public diving competition with a crowd of spectators. There is no visible safety equipment in use. As the diver takes a running start, she slips on the wet platform and accidentally dives headfirst. While the commentator expresses concern, the diver recovers mid-air and enters the water feet-first, averting a potentially fatal accident. The commentator acknowledges the seriousness of the slip and praises the diver's quick reaction. Despite the lack of visible injury, the potential aftermath of such a slip on a high platform could have been catastrophic, including severe head or spinal injury, or even death. The video highlights the inherent danger in high diving, even for professionals, and emphasizes the importance of proper precautions and attention to safety.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "41.mp4",
+    "rating": 6.11111,
+    "summary": "The danger in the video is a young man performing parkour stunts on the roof of a very high building. He is not using any safety equipment and there are no professionals or safety gear in sight. Although his friends are on the roof with him, it is clear they are not trained professionals and there to film. One wrong step could lead to a fall from the roof and result in serious injuries or death. The video takes place on the rooftop of a building with a view of a city below, which shows how high up the subject is and how dangerous the situation truly is. There are no visible warning signs.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "42.mp4",
+    "rating": 8.55556,
+    "summary": "The video shows a fiery car crash at night on a highway. The danger is a high-speed collision resulting in a fire. Both drivers were wearing seatbelts. It is not specified if professionals are attending the scene, but emergency vehicles are present in the aftermath. Both drivers were involved and affected by the crash, but they managed to escape with non-life-threatening injuries. The car, failing to stop at a stop sign, crashes into the truck crossing the intersection, resulting in a large explosion and fire. The potential aftermath, if not shown, could include fatalities, severe burns, and long-term traffic disruption.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "43.mp4",
+    "rating": 7.77778,
+    "summary": "The video shows a fire that broke out in a warehouse containing many gas canisters. The danger is that the canisters could explode due to the heat, causing significant damage and potential casualties. There are no visible safety equipment being used initially, and it is unclear if professionals were working on the gear/danger apparatus. However, firefighters with hoses are shown battling the fire in the aftermath. The video shows the building partially collapsed, indicating the fire's intensity and the risk of explosions. While the immediate aftermath is shown, the video doesn't clarify if anyone died or was injured. The potential aftermath of such an event includes severe burns, fatalities from explosions or fire, and extensive property damage.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "44.mp4",
+    "rating": 0.44444,
+    "summary": "The danger in this video is a lioness seemingly attempting to attack a small child through the glass enclosure at a zoo. Although there is a glass wall separating the lioness from the toddler, there is still a potential for danger if the glass were to break. However, it is unlikely as there is also a small wall below the glass, making it further out of reach. The video shows a child at a zoo standing in front of an enclosure with a lion and lioness. The lioness watches the child and appears agitated before lunging at the child and biting at the glass while the toddler remains oblivious. No one is hurt in the video as the glass wall holds strong. There are no visible warning signs.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "45.mp4",
+    "rating": 3.61111,
+    "summary": "The video shows a man, seemingly an electrician, working on an electrical panel within an electrical room. Despite the inherent danger of working with electricity, the man is not wearing any visible safety equipment, like insulated gloves or a face shield. There are no visible warning signs. He appears to be manipulating wires or components within the open panel while holding it ajar. Suddenly, a powerful electrical explosion erupts from the panel, engulfing the area in a bright flash of light and a shower of sparks. The force of the explosion throws the man back, and the room is plunged into darkness. The video cuts off shortly after, leaving the aftermath and the man's fate unknown. The potential consequences of this event are dire, ranging from severe burns and electrocution to fatal injuries. The lack of safety precautions highlights the extreme risks associated with working on live electrical equipment without proper training and protection.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "46.mp4",
+    "rating": 6.11111,
+    "summary": "The video shows the danger of motorcycle racing, where two professional racers fall off their bikes while taking a turn at high speed on a race track. The racers are wearing extensive safety gear including helmets, gloves, and full-body leather suits. Medical professionals are immediately on the scene to attend to the racers. Though the aftermath is not shown, it's evident from the high-speed crash that the racers could potentially have suffered severe injuries like broken bones, concussions, or road rash despite the safety measures. The environment is a well-maintained race track with clear track markings and no visible warning signs suggesting any immediate danger apart from the inherent risks associated with the sport.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "49.mp4",
+    "rating": 3.44444,
+    "summary": "The danger in the video is a woman rock climbing up a steep cliff face. The climber is using safety equipment including a helmet, rope, and harness. There is also a person at the bottom of the cliff belaying the climber. This means they are controlling the rope to prevent a big fall in case the climber loses their grip. Although the aftermath of the climb is not shown, the climber could have potentially been injured or killed if they fell from the cliff. The video takes place in a forest by a steep cliff and the climber slowly makes their way up the cliff face. There are no visible warning signs.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "50.mp4",
+    "rating": 9.5,
+    "summary": "The video shows the Beirut explosion, a catastrophic event caused by the detonation of a large quantity of ammonium nitrate stored improperly at the port. The danger stemmed from the highly explosive nature of the ammonium nitrate, compounded by the presence of fireworks stored in the same warehouse, as reported in the video. The video itself doesn't show any safety equipment being used and doesn't focus on any specific professionals. The explosion affected a large area of the city of Beirut, with a massive blast wave visible in the video, indicating widespread destruction and loss of life. While the exact aftermath is not depicted in this specific clip, the scale of the explosion suggests a significant loss of life and numerous injuries. The potential aftermath would include widespread damage to buildings and infrastructure, fires, and long-term health effects from the released chemicals. The video captures the sheer scale and devastating impact of the Beirut explosion, highlighting the critical importance of safe storage and handling of hazardous materials.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "51.mp4",
+    "rating": 2.05556,
+    "summary": "The video shows a teacher in a science classroom demonstrating a flammable liquid experiment. The danger lies in the use of an open flame and flammable alcohol solution. While the teacher is wearing safety glasses for eye protection, she's using a set of tongs to hold the $20 bill soaked in the solution, which is not a sufficient safety measure for handling flammable substances. The tongs could heat up, transferring heat to her hand, or the bill could detach from the tongs, potentially spreading burning alcohol. Several people, including the teacher and students in the classroom, are potentially affected by the experiment. While the video doesn't show any immediate injuries, the potential aftermath includes burns from splashing alcohol, or even a fire if the experiment goes wrong and ignites nearby flammable materials. The experiment highlights the need for a safer approach, including a fire-resistant container to catch drips, a longer tool to maintain distance from the flame, and a fire extinguisher readily available in case of accidental ignition.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "54.mp4",
+    "rating": 5.33333,
+    "summary": "The video captures a street scene in an urban environment with moderate traffic. The danger emerges suddenly as a large earthquake strikes, causing visible shaking and prompting people to react. There is no safety equipment visible, nor are any professionals seen assisting with the situation. The earthquake directly affects numerous people on the street, causing some to fall and others to seek cover. While the immediate aftermath shows people in distress, it's not clear if there were any fatalities. However, the potential aftermath of such an event could include injuries from falling debris, further building collapses, and widespread panic.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "55.mp4",
+    "rating": 8.11111,
+    "summary": "The video shows the danger of an earthquake as a multi-story building collapses in on itself. There is no safety equipment visible, nor are there any professionals working on the building. Many humans are in the vicinity of the building and could potentially be affected. The aftermath of the building collapse is not shown, however, it is likely that people were trapped inside and could have died or been injured. The environment is an urban street lined with buildings, and the video starts with people standing on the street seemingly unaware of the impending danger.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "57.mp4",
+    "rating": 7.11111,
+    "summary": "The video shows a large, dangerous fire engulfing a white, multistory building with a clock tower in Spencer, Massachusetts. The fire is intense with flames bursting out of the roof and windows, generating a thick plume of smoke. There are no visible firefighters or safety equipment in use. It appears to be daytime, and a crowd of people is gathered at a distance, suggesting they are likely residents affected by the disaster. The aftermath of the fire is not shown, but potential damage includes complete destruction of the building, potential injuries or fatalities to anyone trapped inside, and significant property damage to surrounding areas.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "59.mp4",
+    "rating": 7.88889,
+    "summary": "The danger in the video is a massive structural collapse of a residential building, likely at night, as suggested by the lighting around a nearby pool. There is no safety equipment visible, nor are there professionals working on the building in the footage. The video focuses on the building before the collapse, showing no humans in the immediate vicinity. However, based on the building being a residence, the potential aftermath is catastrophic, with likely deaths and injuries to residents. The environment is a typical coastal residential area, and there are no visible warning signs in the footage leading up to the collapse.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "60.mp4",
+    "rating": 6.44444,
+    "summary": "The video shows a dangerous situation unfolding in an urban residential area where a leopard has entered a building. The immediate danger is the leopard's presence, posing a significant threat to the people trying to capture it and the residents of the building. Initially, a group of people attempt to guide the leopard from a second-story balcony using a net, but the animal jumps down, highlighting the risk of injury from falls. Professionals, presumably animal control officers, arrive with tranquilizer guns and nets to capture the leopard. The tense standoff and the use of tranquilizers demonstrate the potential for both animal and human injury during the capture attempt. While the video ends before the capture is complete, it underscores the unpredictable nature of wild animals and the inherent dangers associated with their presence in populated areas.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "61.mp4",
+    "rating": 1.11111,
+    "summary": "The video depicts a seemingly mundane office environment where a man in a red sweatshirt is attempting to fix a jammed printer. The potential danger lies in the man repeatedly putting his head inside the printer while it is plugged in and powered on. There's no visible safety equipment, and while he might have some knowledge of printers, there's no indication that he is a trained professional. Only he would be directly affected by any potential mishap. Though the video doesn't show any negative outcome, the potential aftermath of his actions could involve electrocution or injury from the printer's moving parts.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "62.mp4",
+    "rating": 1.72222,
+    "summary": "This video shows a street and an underground car park in an urban area, at night, during a severe flood. The danger lies in the rising floodwaters, which have already submerged the car park and are threatening the street level. There are no visible signs of safety equipment being used. There is no evidence of professionals managing the situation. The floodwaters directly affect the residents and property owners in the area, as evidenced by the partially submerged vehicles and belongings seen in the car park. The aftermath shown is significant property damage and potential displacement of residents. The potential for further damage is high, as the floodwaters are expected to rise further.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "63.mp4",
+    "rating": 3.5,
+    "summary": "The video shows a man indoor rock climbing up a very high and steep climbing wall with many colorful hand and foot holds. The danger is that he is very high up and could fall and injure himself. He is using a safety rope and harness, and there is a person at the bottom who appears to be belaying him. The aftermath of a potential fall is not shown, however, with the safety equipment being used, the climber would likely be caught by the rope and lowered safely to the ground, potentially with minor injuries.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "64.mp4",
+    "rating": 5.44444,
+    "summary": "The video shows a large crowd of people gathered on and around the train tracks at a train station, attempting to board two trains that have stopped on the tracks. The environment is chaotic and crowded, with people pushing and shoving to get on the train. No safety equipment is visible, and it is unclear if any professionals are present. The danger in this situation is that people could be injured or killed by being pushed onto the tracks, being hit by the train, or being crushed by the crowd. The aftermath is not shown, but the potential for serious injuries or fatalities is high.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "66.mp4",
+    "rating": 6.61111,
+    "summary": "The video shows a large tornado touching down in the distance in Andover, KS, with the visible warning sign being the tornado itself. It is unclear if there is any safety equipment being used or if a professional is working on the gear/danger apparatus. There are humans that will be affected by the tornado as there are cars in the parking lot, and a building nearby, though it is unclear if anyone was injured or died. However, the potential aftermath of a tornado of that size is significant property damage and potential loss of life.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "67.mp4",
+    "rating": 4.77778,
+    "summary": "The video shows professional rock climber Chris Sharma tackling a difficult climb on a cliff face that directly overhangs a body of water. The danger is apparent: if he falls, he will fall a significant distance directly into the water below. He is using climbing shoes, and a chalk bag which are standard safety equipment for climbers, but no ropes or harness, meaning a fall would be unarrested. While he is a professional engaging in this activity by choice, the height and proximity to the water pose a serious risk of severe injury upon impact with the water or rocks below if he loses his grip.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "68.mp4",
+    "rating": 7.44444,
+    "summary": "The video shows a catastrophic industrial accident in an aluminum extrusion factory. The danger arises from an explosion and intense fire engulfing a large piece of machinery. Workers are seen operating the machinery moments before the explosion, but they are not wearing any visible safety equipment. Although it is unclear if they are professionals, the aftermath shows the devastating force of the explosion, suggesting potential deaths or severe injuries. The environment appears to be a typical factory setting with no visible warning signs prior to the explosion. The potential aftermath includes widespread damage to the factory, potential loss of life, and severe burns or other injuries to anyone caught in the blast.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "69.mp4",
+    "rating": 4.16667,
+    "summary": "The video shows a group of friends in a backyard at night lighting off fireworks with no safety equipment. The danger is a firework malfunctioning or exploding near the group, as one almost does, coming close to hitting a girl in the head as it falls and explodes. There is no safety equipment being used and it is not a professional setting. Had the firework malfunctioned and exploded near the group, there is a high chance of multiple people being injured.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "70.mp4",
+    "rating": 3.66667,
+    "summary": "The video shows a controlled detonation of explosives in a remote desert environment. The danger is clearly the massive explosion itself, which generates a huge fireball and shockwave, sending debris flying into the air. There is no visible safety equipment being worn by the people observing the explosion in the distance, suggesting they are relying on their distance from the blast for safety. The individuals are likely professionals who have planned and executed the detonation. While no one is seen directly affected by the explosion in the video, the potential aftermath could involve injuries from flying debris, burns, and hearing damage if anyone were too close to the blast.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "71.mp4",
+    "rating": 6.16667,
+    "summary": "The video shows a professional slackliner named Christian Waldner attempting to walk a tightrope suspended high above the ground between two spires of St. Stephen's Cathedral in Vienna, Austria. The danger lies in the extremely high altitude and the potential for a fatal fall if he loses balance. While no safety equipment is visible, the professional nature of the event and the careful setup of the tightrope suggest that safety measures are in place. There are no other humans in immediate danger. The aftermath of the attempt is not shown, but the potential consequences of a fall from that height would be catastrophic, likely resulting in death or very serious injury.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "72.mp4",
+    "rating": 6.11111,
+    "summary": "This video features a paraglider flying over a picturesque mountainous region dotted with villages. The danger comes from the paraglider's wing partially collapsing mid-flight, causing a rapid descent. The paraglider deploys their reserve parachute as a safety measure, indicating they are equipped and trained for such emergencies. The pilot's actions and the presence of other paragliders in the area suggest they are likely experienced. The paraglider is the only person directly affected by the wing collapse. While the video ends before the landing, the potential aftermath could range from a safe landing under the reserve parachute to severe injury if the reserve fails or the landing is poorly executed. The cloudy sky visible in the video could be a contributing factor to the wing collapsing.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "74.mp4",
+    "rating": 5.55556,
+    "summary": "The video shows a storm chaser, presumably a professional, battling hurricane-force winds brought on by Hurricane Irma. The environment is very wet and windy with very low visibility. The storm chaser is wearing a blue jacket and black pants and using an anemometer to measure wind speed. It is unclear what other safety equipment he may have. While the aftermath is not shown, the potential aftermath of this dangerous event could be the storm chaser being blown over and injured by the wind, or being struck by flying debris.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "75.mp4",
+    "rating": 4.83333,
+    "summary": "The video features a person paragliding over a mountainous region with a lake below. The danger lies in the paraglider flying extremely close to the steep, rocky cliffs. He is wearing a helmet and harness, the typical safety gear for paragliding. The individual appears experienced as he navigates the challenging terrain with controlled maneuvers, suggesting he might be a professional or highly skilled amateur. However, the close proximity to the cliffs significantly increases the risk of a collision. Though no aftermath is shown, the potential consequences of a crash would be devastating, including severe injuries or fatality due to the high altitude and rocky terrain. There are no warning signs present in the video, but the inherent danger of paragliding, especially in such challenging conditions, is implicitly understood.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "76.mp4",
+    "rating": 6.5,
+    "summary": "The video shows the destructive power of a tsunami as it inundates a coastal area. The danger is immediately apparent as the large waves surge inland, engulfing cars and structures. There are no visible signs of safety equipment or any professionals managing the disaster. People can be heard reacting in fear and disbelief as they witness the unfolding chaos. While no injuries or fatalities are directly shown, the aftermath reveals numerous vehicles swept away and submerged by the floodwaters. The potential consequences of this tsunami include widespread damage to infrastructure, property loss, and a high likelihood of injuries and fatalities. The force of the waves and the debris carried by the water pose a significant threat to human life and safety.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "77.mp4",
+    "rating": 6.22222,
+    "summary": "The video shows a black convertible stopped at a traffic light on a busy city street at night. The danger is that the car repeatedly emits large bursts of fireworks from its exhaust pipes. There is no visible safety equipment being used, and it's unclear if a professional is operating the fireworks. There are several pedestrians within close proximity to the car who could be injured. While the aftermath of the fireworks is not shown, the potential aftermath could include severe burns, injuries from exploding debris, and potential fires.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "78.mp4",
+    "rating": 5.61111,
+    "summary": "The video shows a person slacklining across a deep valley in a mountainous, forested environment. The danger is the significant height of the slackline, which appears to be strung between two hillsides overlooking a town. It's unclear if the person is using any safety equipment like a harness or tether. While it's likely the slackliner is a professional given the expertise required for this activity, there's no definitive confirmation in the video. The video does not show any warning signs or other people being directly affected. The aftermath of the slackline walk is not shown, however, a fall from that height could result in severe injury or death.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "79.mp4",
+    "rating": 6.0,
+    "summary": "The video shows a raging flood engulfing a riverside road and sidewalk as onlookers watch from higher ground. The danger is the fast-moving floodwaters that have the potential to sweep people away and cause severe injury or death. There is no safety equipment being used, and it doesn't appear that any professionals are working on the situation. The flood is actively affecting humans, with several people walking along the partially flooded sidewalk, seemingly unfazed by the danger. While the aftermath is not shown, the potential consequences of the flood are dire. People risking walking on the flooded path could be swept away, and the floodwaters could cause significant damage to buildings and infrastructure in the area.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "80.mp4",
+    "rating": 5.77778,
+    "summary": "The video shows a hoverboard catching fire and exploding in a family's living room. The danger is the sudden fire and explosion, which could have caused burns or injuries from flying debris. No safety equipment was visible in the video. It's unclear if the hoverboard was being operated by a professional, but it was likely being used by children. The children and the mother in the room were directly affected by the explosion and ran for their lives. The aftermath showed that everyone escaped the fire, with no visible injuries. While the full extent of the damage is unknown, the potential aftermath could have included burns, injuries, and fire damage to the home.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "81.mp4",
+    "rating": 2.66667,
+    "summary": "The video shows a street performer walking on a tightrope while playing the violin. The danger is that he could fall from the tightrope, which is suspended a few feet above the ground. The performer is not using any safety equipment. The man is a professional tightrope walker, as evident from his skill and the fact that he is performing for a crowd. While the aftermath of a potential fall is not shown, the likely outcome would be injuries such as bruises, sprains, or fractures. There are no visible warning signs, but the inherent danger of tightrope walking is understood by the performer and the audience.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "82.mp4",
+    "rating": 2.88889,
+    "summary": "The video shows a young person free climbing a rock climbing wall without the use of a safety harness. They are wearing a helmet, but it is unclear if they are attached to any safety ropes. A person on the ground is holding what looks to be a safety rope, indicating that this may be a controlled environment with professional supervision. However, it is not possible to definitively determine if the climber is attached to the rope. There are other people watching from the ground that could potentially be affected if the climber were to fall. If the climber were to fall from the height shown, serious injury or death is possible.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "85.mp4",
+    "rating": 4.94444,
+    "summary": "The video shows the danger of BMX racing as a rider crashes on a banked turn during a race in a forested BMX park. The racers are all wearing helmets, but no other safety equipment is visible. The riders are not explicitly stated to be professionals, but they are participating in an organized race. The aftermath of the crash is not shown, but the rider is seen falling off their bike on the track. It is possible that the rider could have sustained injuries such as scrapes, bruises, or more serious injuries like broken bones or a concussion. There are no visible warning signs, but the inherent risk of high-speed biking on a dirt track is apparent.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "86.mp4",
+    "rating": 4.88889,
+    "summary": "A group of cyclists are riding on a road, with traffic visible in the distance, next to a guardrail. They are wearing helmets as safety equipment, but they are riding very close to one another which increases the chances of a crash. The cyclists do not appear to be professional. One of the cyclists crashes after clipping the wheel of another bike, causing him to fall. The aftermath shows a bent bike wheel and a cracked bike frame. While the aftermath does not show the cyclist directly, it is possible that he sustained injuries such as road rash or broken bones.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "87.mp4",
+    "rating": 4.55556,
+    "summary": "The video takes place on a snowy ski slope, with people skiing and snowboarding in the background. A snowboarder attempts a jump and lands badly, falling hard on the snow. He's wearing a helmet and goggles, which is the only safety equipment visible. It is not indicated that a professional is working on the danger apparatus/gear. The snowboarder is the only person who could be affected, and although the aftermath is not shown at first, he's visibly injured, bleeding from his mouth. He confirms being fine after taking a moment to catch his breath. An hour later, it's shown that he is okay.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "88.mp4",
+    "rating": 5.83333,
+    "summary": "The video depicts the Running of the Bulls event in Pamplona, Spain. The danger stems from hundreds of people running through narrow streets alongside a dozen bulls, risking being trampled or gored. Participants generally don't wear safety equipment. While there are professionals managing the event, they aren't directly handling the bulls during the run. Two men, one American and one British, were gored in this instance, with the British man in critical condition. While the aftermath isn't fully shown, the video emphasizes the inherent risk of the event, highlighting the potential for severe injuries or even death.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "89.mp4",
+    "rating": 8.22222,
+    "summary": "The video shows a building collapsing on a busy street in Taiwan. The danger is the sudden structural failure of the building, showering debris onto the street below. There is no safety equipment visible, and it is unclear if a professional was working on the building before the collapse. The street is crowded with pedestrians, cars, and motorcyclists who are all potentially in harm's way. While the aftermath is not shown, the potential for fatalities and injuries is extremely high given the amount of debris and the number of people in the immediate vicinity.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "90.mp4",
+    "rating": 7.11111,
+    "summary": "The video shows a professional motorcycle racer losing control of his bike on a racetrack, resulting in a high-speed crash. The danger lies in the potential for severe injury due to the speed of the motorcycle and the proximity of barriers and other racers. The rider is wearing a full set of safety gear, including a helmet, suit, gloves, and boots, which are standard in professional motorcycle racing. The environment is a paved racetrack with safety barriers. There are no visible warning signs as this type of crash is an inherent risk in the sport. The video captures the aftermath of the crash, with the rider sliding across the track. While the video cuts off, the rider likely sustained injuries from the crash, though the severity is unknown. Potential injuries from such an event could range from abrasions and fractures to head injuries or internal trauma.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "93.mp4",
+    "rating": 6.94444,
+    "summary": "The video captures the danger of a sudden building collapse in a residential street in Japan. The dashcam footage shows a vehicle driving slowly down a narrow street lined with houses. Without warning, a building on the right side of the street collapses, creating a large cloud of dust and debris that spills onto the road. The danger is the sudden, unpredictable nature of the collapse, which could cause injury or death to anyone nearby. There is no safety equipment visible in use. It's unclear what caused the collapse, and no professionals are seen working on the building beforehand. The people inside the vehicle are directly affected, experiencing the shock and dust cloud firsthand. While the immediate aftermath only shows the dust cloud, it's highly probable the collapse caused significant damage to the building and potential injury to anyone inside or nearby. There are no visible warning signs prior to the collapse, highlighting the unpredictable nature of such events.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "94.mp4",
+    "rating": 6.72222,
+    "summary": "The video showcases Nik Wallenda, a professional high-wire artist, attempting to walk across the Little Colorado River Gorge near the Grand Canyon on a tightrope. The danger is immense, as he's walking across a vast chasm with no safety harness, relying solely on his balance, a balancing pole, and mental focus. His training, self-belief, and faith are his primary safety measures. It is clear he is a professional, coming from a long line of high-wire performers. While no other humans are directly affected by his walk, there are spectators and a film crew present, witnessing the potentially fatal feat. The video doesn't show the full outcome, but the potential aftermath of a fall would be catastrophic, likely resulting in death. The strong winds causing the cable to sway highlight the inherent environmental risks involved in this dangerous act.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "95.mp4",
+    "rating": 2.22222,
+    "summary": "The video features a man climbing a tall structure designed for indoor rock climbing without any safety equipment. The danger lies in the potential for a fall from a significant height, which could lead to severe injuries or even death. He is not a professional, and no aftermath is shown in the video. While the specific aftermath is unknown, a fall from that height could result in broken bones, head injuries, or worse.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "97.mp4",
+    "rating": 5.61111,
+    "summary": "The video shows a man driving a car erratically, crossing lanes, and eventually driving off the highway and into a field. The danger lies in the reckless driving behavior, which could lead to a serious car accident. There is no visible safety equipment being used. It is unclear if the driver is a professional driver, but his actions suggest otherwise. Other drivers on the highway could be affected by his reckless driving. While the aftermath is not shown, potential consequences include severe injury or death to the driver and damage to the car and potentially other vehicles. The environment is a highway with moderate traffic. There are no visible warning signs leading up to the dangerous event.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "98.mp4",
+    "rating": 6.22222,
+    "summary": "This video shows the aftermath of severe flooding in Mumbai, India. The danger is the floodwater itself, which has submerged streets and sidewalks, creating a risk of drowning and waterborne diseases. No safety equipment or professionals are visible in the video. The flood is directly affecting residents, with people seen struggling to navigate the flooded streets and vehicles submerged in water. While the specific aftermath is not shown, potential consequences include property damage, displacement of residents, and potential loss of life. The video highlights the destructive power of natural disasters and their impact on urban environments.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "99.mp4",
+    "rating": 4.83333,
+    "summary": "A woman is seen in the video attempting to fend off a rabid fox from attacking her two small dogs in her yard. She is not wearing any safety equipment and is not a professional in handling wild or rabid animals. It is unclear what happened right before the video started, but it is evident that the fox was acting aggressively towards the small dogs. Her husband comes out to help, but he is also not wearing any safety equipment. The aftermath is not shown but the potential aftermath could involve the woman or her dogs being bitten and potentially infected with rabies by the wild animal.",
+    "source": "ViDAS"
+  },
+  {
+    "video_id": "ucf_assault_001.mp4",
+    "rating": 8.6,
+    "summary": "Surveillance camera footage of a violent physical assault and street attack on a person",
+    "source": "UCF-Crime"
+  },
+  {
+    "video_id": "ucf_abuse_001.mp4",
+    "rating": 8.8,
+    "summary": "Surveillance video of physical abuse and violence endangering human safety",
+    "source": "UCF-Crime"
+  },
+  {
+    "video_id": "ucf_explosion_001.mp4",
+    "rating": 9.6,
+    "summary": "Massive fiery industrial explosion causing catastrophic danger and destruction",
+    "source": "UCF-Crime"
+  },
+  {
+    "video_id": "ucf_arson_001.mp4",
+    "rating": 9.1,
+    "summary": "Arson fire erupting rapidly inside a building endangering human lives",
+    "source": "UCF-Crime"
+  },
+  {
+    "video_id": "ucf_fighting_002.mp4",
+    "rating": 8.3,
+    "summary": "Violent physical altercation and street brawl between multiple individuals",
+    "source": "UCF-Crime"
+  },
+  {
+    "video_id": "ucf_normal_003.mp4",
+    "rating": 1.0,
+    "summary": "Calm and peaceful street surveillance footage with no danger",
+    "source": "UCF-Crime"
+  },
+  {
+    "video_id": "ucf_normal_006.mp4",
+    "rating": 1.2,
+    "summary": "Standard indoor surveillance of individuals walking peacefully",
+    "source": "UCF-Crime"
+  },
+  {
+    "video_id": "ucf_normal_010.mp4",
+    "rating": 0.9,
+    "summary": "Quiet hallway surveillance showing normal foot traffic with no threats",
+    "source": "UCF-Crime"
+  },
+  {
+    "video_id": "ucf_normal_015.mp4",
+    "rating": 1.1,
+    "summary": "Normal daytime parking lot with cars parked and pedestrians walking safely",
+    "source": "UCF-Crime"
+  },
+  {
+    "video_id": "dashcam_vru_child_car.mp4",
+    "rating": 8.8,
+    "summary": "A child suddenly appears in front of an approaching car with high collision danger",
+    "source": "Dashcam-VRU"
+  },
+  {
+    "video_id": "dashcam_car_bike_truck.mp4",
+    "rating": 8.4,
+    "summary": "A vehicle and motorcycle near-miss collision with high speed oncoming traffic",
+    "source": "Dashcam-VRU"
+  },
+  {
+    "video_id": "dashcam_pedestrian_nearmiss.mp4",
+    "rating": 8.2,
+    "summary": "A pedestrian crossing the road in front of an oncoming speeding vehicle",
+    "source": "Dashcam-VRU"
+  },
+  {
+    "video_id": "dashcam_normal_driving.mp4",
+    "rating": 1.2,
+    "summary": "A car driving smoothly along an open road in daylight with no hazards",
+    "source": "Dashcam-VRU"
+  },
+  {
+    "video_id": "dashcam_safe_sidewalk.mp4",
+    "rating": 0.9,
+    "summary": "A person walking safely on a separated pedestrian sidewalk",
+    "source": "Dashcam-VRU"
+  }
+]
