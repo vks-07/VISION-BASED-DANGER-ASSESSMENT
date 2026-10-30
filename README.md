@@ -48,9 +48,11 @@ The system uses a 4-stage pipeline:
 
 ---
 
-## 🚀 Installation & Setup
-
-> 💡 For an in-depth developer guide, environment setup for Windows/Linux/macOS, architecture walkthrough, and troubleshooting, see [SETUP.md](SETUP.md).
+> 💡 **Documentation Links:**
+> - [MANUAL.md](MANUAL.md): Complete step-by-step setup, proxy guide, and running instructions for both **macOS** and **Windows** (PowerShell & CMD).
+> - [report.md](report.md): Publication-grade academic research paper and technical engineering report (What, Why, How, Why Not Alternatives, testing & loss).
+> - [SETUP.md](SETUP.md): Developer architecture walkthrough and troubleshooting.
+> - [presentation.md](presentation.md): Project presentation slide deck and defense script.
 
 **1. Clone and Setup Python Environment**
 ```bash

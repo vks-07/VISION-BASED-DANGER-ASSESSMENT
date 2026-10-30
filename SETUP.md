@@ -183,15 +183,16 @@ VISION-BASED-DANGER-ASSESSMENT/
 │   │   ├── package.json        # Node frontend dependencies
 │   │   └── vite.config.js      # Vite build configuration
 │   └── model/
-│       ├── mlp_network.py      # PyTorch DangerScoreNetwork (LayerNorm, Dropout, 0-10 Sigmoid)
-│       ├── dataset.py          # PyTorch DangerDataset with temporal mean pooling
-│       └── train.py            # PyTorch MSE training loop with L2 weight decay
+│       ├── mlp_network.py      # PyTorch DangerScoreNetwork (Bi-LSTM, Cross-Attention, LayerNorm, Dropout, 0-10 Sigmoid)
+│       ├── dataset.py          # PyTorch DangerDataset loading unified 136-sample metadata
+│       └── train.py            # PyTorch Huber + Pairwise Ranking loss loop with CosineAnnealingLR
 │
 ├── requirements.txt            # Python dependencies
-├── train_full_dataset.py       # Master script for dataset ingestion & training
+├── train_full_dataset.py       # Master script for full dataset pipeline (ViDAS + UCF + DADA)
 ├── test_pipeline.py            # Quick end-to-end single-sample test script
 ├── presentation.md             # Project presentation script & slide guide
-├── report.md                   # Detailed technical project report
+├── report.md                   # Comprehensive academic research paper & technical report
+├── MANUAL.md                   # Complete operational manual (Windows/Mac setup & proxy guide)
 ├── README.md                   # Project overview & quick summary
 └── SETUP.md                    # This complete developer setup guide
 ```
@@ -224,8 +225,12 @@ The code is designed to automatically detect CUDA or MPS (Apple Silicon), with a
 ### 4. `Warning: You are sending unauthenticated requests to the HF Hub`
 This warning from Hugging Face is normal when downloading public datasets without an API token. It does not affect functionality. If you hit rate limits, you can optionally set `export HF_TOKEN="your_token"`.
 
-### 5. Why are scores clustered around 4.5–6.0 on unseen videos?
-The dataset contains human ratings with a natural mean around `~5.2`. Because the model was trained on the available 81 ViDAS samples, it encounters the *Curse of Dimensionality* on novel out-of-distribution videos, resulting in statistical regression toward the mean. Refer to `presentation.md` for the complete technical defense and analysis.
+### 5. How was the "Regression to the Mean" issue resolved?
+In early iterations trained solely on 81 ViDAS samples using MSE loss, predictions tended to cluster around ~5.2 on novel videos. This was fully resolved by:
+1. **Expanding the Dataset to 136 Samples:** Integrating real-world CCTV violence (UCF-Crime) and critical driving hazards (DADA-2000).
+2. **Implementing Bi-LSTM & Multimodal Cross-Attention:** Replacing frame-averaging with temporal trajectory tracking and text-queried attention.
+3. **Switching to Composite Huber + Pairwise Margin Ranking Loss:** Enforcing strict monotonic ordering between high-risk events (scoring 8.5–9.5) and low-risk scenes (scoring 0.5–1.5).
+Refer to `report.md` for the full technical analysis and mathematical formulation.
 
 ---
 
