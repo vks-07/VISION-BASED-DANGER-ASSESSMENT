@@ -134,7 +134,14 @@ To expand training data with real-world surveillance anomalies (Assault, Fight, 
 python src/data_pipeline/expand_dataset.py
 python -m src.model.train
 ```
-This updates `data/dataset_metadata.json` and trains on the unified 96-sample multimodal dataset.
+
+### Integrating DADA-2000 Benchmark (Pedestrian, Bike, Truck, Animal)
+To integrate 10 videos of each scenario type directly from the DADA-2000 benchmark:
+```bash
+python src/data_pipeline/integrate_dada2000.py
+python -m src.model.train
+```
+This updates `data/dataset_metadata.json` and trains on the complete 136-sample multimodal dataset.
 
 ---
 

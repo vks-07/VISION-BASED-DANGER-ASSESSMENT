@@ -109,4 +109,11 @@ To expand the training data with real-world surveillance anomalies (Assault, Fig
 python src/data_pipeline/expand_dataset.py
 python -m src.model.train
 ```
-This automatically updates `data/dataset_metadata.json` and trains on the unified multimodal dataset.
+
+### Integrating DADA-2000 Benchmark (Pedestrian, Bike, Truck, Animal)
+To integrate 10 videos of each scenario type (Pedestrian Crossing, Bike Crash, Truck Blind Spot, Animal Collision) directly from the DADA-2000 benchmark:
+```bash
+python src/data_pipeline/integrate_dada2000.py
+python -m src.model.train
+```
+This expands the training dataset to **136 multimodal samples** across ViDAS, UCF-Crime, and DADA-2000.
