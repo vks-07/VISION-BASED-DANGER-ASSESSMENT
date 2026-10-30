@@ -53,7 +53,7 @@ def init_training_components(embeddings_dir: str) -> tuple:
 
 def run_training_loop(epochs: int, dataloader: DataLoader, model: nn.Module, optimizer: optim.Optimizer) -> None:
     """
-    Executes the training loop over the dataset.
+    Executes the training loop over the dataset with learning rate decay.
     
     Parameters:
         epochs (int): Number of training epochs.
@@ -63,6 +63,8 @@ def run_training_loop(epochs: int, dataloader: DataLoader, model: nn.Module, opt
     Returns:
         None
     """
+    scheduler = optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=epochs, eta_min=1e-5)
+    
     for epoch in range(epochs):
         model.train()
         total_loss = 0.0
@@ -78,6 +80,7 @@ def run_training_loop(epochs: int, dataloader: DataLoader, model: nn.Module, opt
             
             total_loss += loss.item()
             
+        scheduler.step()
         avg_loss = total_loss / max(len(dataloader), 1)
         print(f"Epoch [{epoch+1}/{epochs}], Combined Loss: {avg_loss:.4f}")
 
