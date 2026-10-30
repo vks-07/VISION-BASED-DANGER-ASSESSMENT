@@ -288,35 +288,52 @@ Across all 136 test sequences, the trained model achieved the following statisti
 | **Dashcam-VRU Near-Misses** | 5 | 5.48 | **1.7004** |
 
 ### 6.3 Critical Qualitative Evaluation Cases
-To verify that the model does not suffer from mean-regression, we evaluated diverse real-world scenes across the spectrum:
+To verify that the model does not suffer from mean-regression, we evaluated diverse real-world scenes across the spectrum using the trained `data/models/danger_model.pth` weights on cached multimodal embeddings:
 
 ```
 [Qualitative Assessment Verification]
 
-Scenario 1: "A small child abruptly runs into traffic directly in front of an approaching car"
+Scenario 1: Child Darting in Front of Vehicle
+  - Video File:         dashcam_vru_child_car.mp4 (Dashcam-VRU)
+  - Text Context:       "A child suddenly appears in front of an approaching car with rapid deceleration and close-proximity emergency braking"
   - Ground Truth Score: 8.80 / 10.0
-  - Model Prediction:   8.76 / 10.0
-  - System Verdict:     HIGH DANGER (Imminent collision hazard)
+  - Model Prediction:   7.83 / 10.0
+  - System Verdict:     HIGH DANGER (Severe pedestrian collision hazard)
 
-Scenario 2: "Motorcycle overtaking a turning truck inside its blind spot resulting in a side collision"
+Scenario 2: Heavy Truck Blind-Spot Collision
+  - Video File:         dada_truck_blind_08.mp4 (DADA-2000)
+  - Text Context:       "A semi-trailer truck rear-ends traffic stopped at a nighttime intersection causing severe structural crush"
   - Ground Truth Score: 9.30 / 10.0
-  - Model Prediction:   9.16 / 10.0
-  - System Verdict:     HIGH DANGER (Severe vehicular crash)
+  - Model Prediction:   9.43 / 10.0
+  - System Verdict:     HIGH DANGER (Severe commercial vehicle crash)
 
-Scenario 3: "A deer darting across an unlit highway at high speed"
+Scenario 3: Violent Two-Wheeler Collision
+  - Video File:         dada_bike_crash_02.mp4 (DADA-2000)
+  - Text Context:       "A motorcycle collides violently with an oncoming vehicle on a curved rural road throwing the rider"
+  - Ground Truth Score: 9.20 / 10.0
+  - Model Prediction:   9.11 / 10.0
+  - System Verdict:     HIGH DANGER (Critical vehicular collision)
+
+Scenario 4: High-Speed Wildlife Collision
+  - Video File:         dada_animal_col_05.mp4 (DADA-2000)
+  - Text Context:       "A high speed highway deer collision causing severe front bumper and windshield damage"
   - Ground Truth Score: 8.60 / 10.0
-  - Model Prediction:   8.64 / 10.0
-  - System Verdict:     HIGH DANGER (Wildlife collision hazard)
+  - Model Prediction:   8.55 / 10.0
+  - System Verdict:     HIGH DANGER (High-speed animal impact)
 
-Scenario 4: "Surveillance footage of street assault and physical fighting"
-  - Ground Truth Score: 8.90 / 10.0
-  - Model Prediction:   8.82 / 10.0
+Scenario 5: Surveillance Physical Street Assault
+  - Video File:         ucf_assault_001.mp4 (UCF-Crime)
+  - Text Context:       "Surveillance camera footage of a violent physical assault and street violence endangering individuals"
+  - Ground Truth Score: 8.60 / 10.0
+  - Model Prediction:   8.68 / 10.0
   - System Verdict:     HIGH DANGER (Violent physical altercation)
 
-Scenario 5: "A person casually walking a dog along a peaceful neighborhood sidewalk on a sunny morning"
-  - Ground Truth Score: 0.60 / 10.0
-  - Model Prediction:   0.62 / 10.0
-  - System Verdict:     LOW RISK (Controlled, normal activity)
+Scenario 6: Peaceful Pedestrian Walk & Clear Hallway
+  - Video Files:        ucf_normal_003.mp4 & ucf_normal_010.mp4 (UCF-Crime) / 44.mp4 (ViDAS)
+  - Text Context:       "Calm and peaceful street surveillance footage with no danger"
+  - Ground Truth Score: 0.90 / 10.0
+  - Model Prediction:   0.48 - 0.66 / 10.0
+  - System Verdict:     LOW RISK (Normal everyday activity)
 ```
 
 ### 6.4 System Latency & Hardware Profile
