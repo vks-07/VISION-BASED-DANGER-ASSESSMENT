@@ -574,5 +574,245 @@
     "rating": 0.9,
     "summary": "A person walking safely on a separated pedestrian sidewalk",
     "source": "Dashcam-VRU"
+  },
+  {
+    "video_id": "dada_ped_cross_01.mp4",
+    "rating": 8.9,
+    "summary": "A pedestrian steps abruptly onto the roadway directly into the vehicle lane causing an immediate collision",
+    "source": "DADA-2000 (pedestrians_crossing)"
+  },
+  {
+    "video_id": "dada_ped_cross_02.mp4",
+    "rating": 8.8,
+    "summary": "A pedestrian crossing an urban street is struck by an approaching car braking abruptly",
+    "source": "DADA-2000 (pedestrians_crossing)"
+  },
+  {
+    "video_id": "dada_ped_cross_03.mp4",
+    "rating": 9.1,
+    "summary": "An ego-vehicle collides with a pedestrian running across a multi-lane roadway",
+    "source": "DADA-2000 (pedestrians_crossing)"
+  },
+  {
+    "video_id": "dada_ped_cross_04.mp4",
+    "rating": 8.7,
+    "summary": "A person crossing the road from the shoulder is hit by an oncoming vehicle with high impact",
+    "source": "DADA-2000 (pedestrians_crossing)"
+  },
+  {
+    "video_id": "dada_ped_cross_05.mp4",
+    "rating": 8.6,
+    "summary": "Vehicle strikes a pedestrian stepping from between parked cars into oncoming traffic",
+    "source": "DADA-2000 (pedestrians_crossing)"
+  },
+  {
+    "video_id": "dada_ped_cross_06.mp4",
+    "rating": 9.0,
+    "summary": "A pedestrian in dark clothing crossing a street at night is struck by a moving car",
+    "source": "DADA-2000 (pedestrians_crossing)"
+  },
+  {
+    "video_id": "dada_ped_cross_07.mp4",
+    "rating": 8.5,
+    "summary": "Pedestrian crossing an intersection is clipped by a turning vehicle in daylight",
+    "source": "DADA-2000 (pedestrians_crossing)"
+  },
+  {
+    "video_id": "dada_ped_cross_08.mp4",
+    "rating": 9.2,
+    "summary": "A crossing pedestrian is hit by a speeding vehicle unable to brake in time",
+    "source": "DADA-2000 (pedestrians_crossing)"
+  },
+  {
+    "video_id": "dada_ped_cross_09.mp4",
+    "rating": 8.6,
+    "summary": "A person stepping onto a crosswalk is struck by an overtaking vehicle",
+    "source": "DADA-2000 (pedestrians_crossing)"
+  },
+  {
+    "video_id": "dada_ped_cross_10.mp4",
+    "rating": 8.8,
+    "summary": "A child and adult attempting to cross a busy road face an imminent collision with traffic",
+    "source": "DADA-2000 (pedestrians_crossing)"
+  },
+  {
+    "video_id": "dada_bike_crash_01.mp4",
+    "rating": 8.7,
+    "summary": "A bicycle crossing an intersection is struck by a car in an urban roadway",
+    "source": "DADA-2000 (bike_crash)"
+  },
+  {
+    "video_id": "dada_bike_crash_02.mp4",
+    "rating": 9.2,
+    "summary": "A motorcycle collides violently with an oncoming vehicle on a multi-lane city road",
+    "source": "DADA-2000 (bike_crash)"
+  },
+  {
+    "video_id": "dada_bike_crash_03.mp4",
+    "rating": 8.6,
+    "summary": "A cyclist riding along an undivided road is hit from the side by an accelerating car",
+    "source": "DADA-2000 (bike_crash)"
+  },
+  {
+    "video_id": "dada_bike_crash_04.mp4",
+    "rating": 8.9,
+    "summary": "A motorcycle skids on a narrow road and crashes into an oncoming vehicle",
+    "source": "DADA-2000 (bike_crash)"
+  },
+  {
+    "video_id": "dada_bike_crash_05.mp4",
+    "rating": 7.9,
+    "summary": "A car reversing out of a driveway collides with a passing bicycle",
+    "source": "DADA-2000 (bike_crash)"
+  },
+  {
+    "video_id": "dada_bike_crash_06.mp4",
+    "rating": 8.5,
+    "summary": "A scooter rider turning at an intersection is struck by a straight-traveling car",
+    "source": "DADA-2000 (bike_crash)"
+  },
+  {
+    "video_id": "dada_bike_crash_07.mp4",
+    "rating": 8.4,
+    "summary": "A motorcycle crashes into the rear of a braking vehicle at an urban intersection",
+    "source": "DADA-2000 (bike_crash)"
+  },
+  {
+    "video_id": "dada_bike_crash_08.mp4",
+    "rating": 8.6,
+    "summary": "A bicycle rider swerves into a vehicle lane and is knocked down by traffic",
+    "source": "DADA-2000 (bike_crash)"
+  },
+  {
+    "video_id": "dada_bike_crash_09.mp4",
+    "rating": 8.8,
+    "summary": "A motorcycle collision at high speed with a car making an abrupt lane change",
+    "source": "DADA-2000 (bike_crash)"
+  },
+  {
+    "video_id": "dada_bike_crash_10.mp4",
+    "rating": 8.7,
+    "summary": "A cyclist struck by an opening car door and falling directly into moving traffic",
+    "source": "DADA-2000 (bike_crash)"
+  },
+  {
+    "video_id": "dada_truck_blind_01.mp4",
+    "rating": 8.9,
+    "summary": "A large heavy commercial truck making a turn collides with a vehicle in its blind spot",
+    "source": "DADA-2000 (truck_blind_spot)"
+  },
+  {
+    "video_id": "dada_truck_blind_02.mp4",
+    "rating": 8.8,
+    "summary": "A city bus turning at an intersection strikes a pedestrian standing in its right-side blind spot",
+    "source": "DADA-2000 (truck_blind_spot)"
+  },
+  {
+    "video_id": "dada_truck_blind_03.mp4",
+    "rating": 9.0,
+    "summary": "A large delivery truck turns abruptly across oncoming lanes causing a severe crash",
+    "source": "DADA-2000 (truck_blind_spot)"
+  },
+  {
+    "video_id": "dada_truck_blind_04.mp4",
+    "rating": 9.2,
+    "summary": "A heavy semi-truck blind spot collision pushing a car along a highway guardrail",
+    "source": "DADA-2000 (truck_blind_spot)"
+  },
+  {
+    "video_id": "dada_truck_blind_05.mp4",
+    "rating": 9.1,
+    "summary": "A truck swerves across the median into oncoming traffic with severe impact hazard",
+    "source": "DADA-2000 (truck_blind_spot)"
+  },
+  {
+    "video_id": "dada_truck_blind_06.mp4",
+    "rating": 8.3,
+    "summary": "A public transit bus sideswipes an overtaking vehicle during an unsignaled lane change",
+    "source": "DADA-2000 (truck_blind_spot)"
+  },
+  {
+    "video_id": "dada_truck_blind_07.mp4",
+    "rating": 8.7,
+    "summary": "A pedestrian walking near the front blind spot of a stationary heavy truck is struck as it starts",
+    "source": "DADA-2000 (truck_blind_spot)"
+  },
+  {
+    "video_id": "dada_truck_blind_08.mp4",
+    "rating": 9.3,
+    "summary": "A semi-trailer truck rear-ends traffic stopped at a nighttime intersection",
+    "source": "DADA-2000 (truck_blind_spot)"
+  },
+  {
+    "video_id": "dada_truck_blind_09.mp4",
+    "rating": 9.0,
+    "summary": "A heavy dump truck turning right crushes a two-wheeler caught in its turning blind zone",
+    "source": "DADA-2000 (truck_blind_spot)"
+  },
+  {
+    "video_id": "dada_truck_blind_10.mp4",
+    "rating": 9.1,
+    "summary": "A large logistics truck skids on wet asphalt causing a multi-vehicle jackknife collision",
+    "source": "DADA-2000 (truck_blind_spot)"
+  },
+  {
+    "video_id": "dada_animal_col_01.mp4",
+    "rating": 7.8,
+    "summary": "A dog suddenly dashes into the street directly in front of a moving car causing emergency braking",
+    "source": "DADA-2000 (animal_collision)"
+  },
+  {
+    "video_id": "dada_animal_col_02.mp4",
+    "rating": 8.2,
+    "summary": "An animal running into a dark roadway at night causes a vehicle to swerve and crash",
+    "source": "DADA-2000 (animal_collision)"
+  },
+  {
+    "video_id": "dada_animal_col_03.mp4",
+    "rating": 8.7,
+    "summary": "A deer leaping across a highway collides with the windshield of an oncoming car",
+    "source": "DADA-2000 (animal_collision)"
+  },
+  {
+    "video_id": "dada_animal_col_04.mp4",
+    "rating": 7.5,
+    "summary": "A stray dog running across a multi-lane road narrowly escapes an oncoming vehicle collision",
+    "source": "DADA-2000 (animal_collision)"
+  },
+  {
+    "video_id": "dada_animal_col_05.mp4",
+    "rating": 8.6,
+    "summary": "A high speed highway deer collision causing severe front bumper and windshield damage",
+    "source": "DADA-2000 (animal_collision)"
+  },
+  {
+    "video_id": "dada_animal_col_06.mp4",
+    "rating": 8.9,
+    "summary": "A herd of cattle crossing an unlit rural road at night causing a multi-car pileup",
+    "source": "DADA-2000 (animal_collision)"
+  },
+  {
+    "video_id": "dada_animal_col_07.mp4",
+    "rating": 7.6,
+    "summary": "A vehicle swerving abruptly to avoid hitting a dog in a suburban residential neighborhood",
+    "source": "DADA-2000 (animal_collision)"
+  },
+  {
+    "video_id": "dada_animal_col_08.mp4",
+    "rating": 8.4,
+    "summary": "Wild hog dashing across a rural highway resulting in a violent frontal impact with a truck",
+    "source": "DADA-2000 (animal_collision)"
+  },
+  {
+    "video_id": "dada_animal_col_09.mp4",
+    "rating": 8.8,
+    "summary": "Sudden moose crossing on a snowy road causing a loss of vehicle traction and barrier impact",
+    "source": "DADA-2000 (animal_collision)"
+  },
+  {
+    "video_id": "dada_animal_col_10.mp4",
+    "rating": 8.5,
+    "summary": "A horse breaking loose onto a busy roadway posing an extreme collision hazard for drivers",
+    "source": "DADA-2000 (animal_collision)"
   }
 ]
